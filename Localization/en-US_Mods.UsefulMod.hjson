@@ -486,4 +486,32 @@ Items: {
 			Non-Consumable
 			'''
 	}
+
+	OminousSkull: {
+		DisplayName: Ominous Skull
+		Tooltip: 
+			'''
+			Summons Skeletron at Night.
+			Summons the Dungeon Guardian in the Day.
+			Non-Consumable
+			'''
+	}
+
+	PrismaticCore: {
+		DisplayName: Prismatic Core
+		Tooltip: 
+			'''
+			Summons The Empress of Light.
+			Non-Consumable
+			'''
+	}
+
+	TruffleOil: {
+		DisplayName: Truffle Oil
+		Tooltip:
+			'''
+			Summons Duke Fishron.
+			Non-Consumable
+			'''
+	}
 }
