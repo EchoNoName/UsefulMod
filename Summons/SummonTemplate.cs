@@ -1,8 +1,16 @@
 using Microsoft.Xna.Framework;
+using System.Collections.Generic;
 using Terraria;
-using Terraria.ID;
-using Terraria.ModLoader;
 using Terraria.Audio;
+using Terraria.Chat;
+using Terraria.DataStructures;
+using Terraria.ID;
+using Terraria.Localization;
+using Terraria.ModLoader;
+using System.Security.Cryptography.X509Certificates;
+using System;
+using System.Linq;
+using Microsoft.Build.Evaluation;
 
 namespace UsefulMod.Summons
 {
@@ -14,6 +22,20 @@ namespace UsefulMod.Summons
         /// Use NPCID.X or ModContent.NPCType&lt;T&gt;()
         /// </summary>
         public abstract int SummonedNPCType { get; }
+
+        public static readonly List<int> bosses = new List<int>
+        {
+            NPCID.EyeofCthulhu,
+            NPCID.KingSlime,
+            NPCID.QueenBee,
+            NPCID.SkeletronHead,
+            NPCID.WallofFlesh,
+            NPCID.Plantera,
+            NPCID.Golem,
+            NPCID.DukeFishron,
+            NPCID.CultistBoss,
+            NPCID.MoonLordCore
+        };
 
         public override void SetStaticDefaults() {
             Item.ResearchUnlockCount = 1;
@@ -30,16 +52,30 @@ namespace UsefulMod.Summons
 		}
 		
 		public override bool? UseItem(Player player) {
-            if (player.whoAmI == Main.myPlayer) {
+
+            float x_spawn_cord = player.position.X + Main.rand.Next(-800, 800);
+            float y_spawn_cord = player.position.Y - Main.rand.Next(-800, -300);
+            if (player.whoAmI == Main.myPlayer)
                 SoundEngine.PlaySound(SoundID.Roar, player.position);
 
                 if (Main.netMode != NetmodeID.MultiplayerClient) {
-                    NPC.SpawnOnPlayer(player.whoAmI, SummonedNPCType);
+                    if (bosses.Contains(SummonedNPCType)) {
+                        NPC.SpawnOnPlayer(player.whoAmI, SummonedNPCType);
+                    }
+                    else {
+                        int n = NPC.NewNPC(player.GetSource_ItemUse(Item), (int)x_spawn_cord, (int)y_spawn_cord, SummonedNPCType);
+                    }
                 }
                 else {
-                    NetMessage.SendData(MessageID.SpawnBossUseLicenseStartEvent, number: player.whoAmI, number2: SummonedNPCType);
+                    LocalizedText text = Language.GetText("Announcement.HasAwoken");
+                    int n = NPC.NewNPC(NPC.GetBossSpawnSource(Main.myPlayer), (int)x_spawn_cord, (int)y_spawn_cord, SummonedNPCType);
+                    String npcName = Lang.GetNPCNameValue(SummonedNPCType);
+                    if (n != Main.maxNPCs && Main.netMode == NetmodeID.Server)
+                        NetMessage.SendData(MessageID.SyncNPC, number: n);
+                        ChatHelper.BroadcastChatMessage(text.ToNetworkText(npcName), new Color(175, 75, 255));
+                        // Sends Has awoken message in chat for multuplayer
+
                 }
-            }
             return true;
         }
 	}
