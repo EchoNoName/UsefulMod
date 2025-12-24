@@ -1,0 +1,3 @@
+displayName = Lazymans Mod
+author = Echo
+version = 0.1

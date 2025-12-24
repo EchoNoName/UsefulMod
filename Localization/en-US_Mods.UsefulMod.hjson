@@ -1,0 +1,277 @@
+NPCs: {
+	SummonNPC: {
+		TownNPCMood: {
+			Princess_LovesNPC: I like {NPCName}.
+			LikeNPC_Princess: I like {NPCName}.
+			HateNPC: I hate {NPCName}.
+			DislikeNPC: I dislike {NPCName}.
+			LikeNPC: I like {NPCName}.
+			LoveNPC: I love {NPCName}.
+			DislikeBiome: I dislike {BiomeName}.
+			LikeBiome: I like {BiomeName}.
+			HateCrowded: I hate how crowded I am.
+			DislikeCrowded: I dislike how crowded I am.
+			LoveSpace: I love having so much space.
+			FarFromHome: I am too far from home.
+			NoHome: I hate not having a home.
+			Content: I am content.
+		}
+
+		DisplayName: Summon N P C
+		DeathMessage: Mods.UsefulMod.NPCs.SummonNPC.DeathMessage
+	}
+
+	PermNPC: {
+		TownNPCMood: {
+			Princess_LovesNPC: I like {NPCName}.
+			LikeNPC_Princess: I like {NPCName}.
+			HateNPC: I hate {NPCName}.
+			DislikeNPC: I dislike {NPCName}.
+			LikeNPC: I like {NPCName}.
+			LoveNPC: I love {NPCName}.
+			DislikeBiome: I dislike {BiomeName}.
+			LikeBiome: I like {BiomeName}.
+			HateCrowded: I hate how crowded I am.
+			DislikeCrowded: I dislike how crowded I am.
+			LoveSpace: I love having so much space.
+			FarFromHome: I am too far from home.
+			NoHome: I hate not having a home.
+			Content: I am content.
+		}
+
+		DisplayName: P
+		DeathMessage: "P died. "
+	}
+}
+
+Items: {
+	LuckGod: {
+		Tooltip:
+			'''
+			Become as Lucky as one can be!
+			Can only be used once.
+			Permantly sets your luck stat to 1.
+			'''
+		DisplayName: Aeon of Luck Chalice
+	}
+
+	PinkyCrown: {
+		DisplayName: Pinky Crown
+		Tooltip: ""
+	}
+
+	DeadMansPick: {
+		DisplayName: Dead Mans Pick
+		Tooltip: ""
+	}
+
+	TimsHat: {
+		DisplayName: Tims Hat
+		Tooltip: ""
+	}
+
+	FossilizedSkeleton: {
+		DisplayName: Fossilized Skeleton
+		Tooltip: ""
+	}
+
+	WeddingRing: {
+		DisplayName: Wedding Ring
+		Tooltip: ""
+	}
+
+	GuidesSoul: {
+		DisplayName: Guides Soul
+		Tooltip: ""
+	}
+
+	SuspiciousGoldKey: {
+		DisplayName: Suspicious Gold Key
+		Tooltip: ""
+	}
+
+	PileOfFruits: {
+		Tooltip: ""
+		DisplayName: Pile Of Fruits
+	}
+
+	LitLantern: {
+		Tooltip: ""
+		DisplayName: Lit Lantern
+	}
+
+	FakeJellyfish: {
+		Tooltip: ""
+		DisplayName: Fake Jellyfish
+	}
+
+	DeclarationofWar: {
+		Tooltip: ""
+		DisplayName: Declarationof War
+	}
+
+	ClownForHire: {
+		Tooltip: ""
+		DisplayName: Clown For Hire
+	}
+
+	Algae: {
+		Tooltip: ""
+		DisplayName: Algae
+	}
+
+	SuspiciousChest: {
+		DisplayName: Suspicious Chest
+		Tooltip: ""
+	}
+
+	ThePlank: {
+		DisplayName: The Plank
+		Tooltip: ""
+	}
+
+	ValentineChocolate: {
+		DisplayName: Valentine Chocolate
+		Tooltip: ""
+	}
+
+	AssaultVest: {
+		DisplayName: Assault Vest
+		Tooltip: ""
+	}
+
+	BloodyEel: {
+		DisplayName: Bloody Eel
+		Tooltip: ""
+	}
+
+	BloodyEye: {
+		DisplayName: Bloody Eye
+		Tooltip: ""
+	}
+
+	BloodyMollusk: {
+		DisplayName: Bloody Mollusk
+		Tooltip: ""
+	}
+
+	BloodyScale: {
+		DisplayName: Bloody Scale
+		Tooltip: ""
+	}
+
+	BloodyShark: {
+		DisplayName: Bloody Shark
+		Tooltip: ""
+	}
+
+	BoneLicense: {
+		DisplayName: Bone License
+		Tooltip: ""
+	}
+
+	BurningGoggles: {
+		DisplayName: Burning Goggles
+		Tooltip: ""
+	}
+
+	BurntEye: {
+		DisplayName: Burnt Eye
+		Tooltip: ""
+	}
+
+	ClumsyCrown: {
+		DisplayName: Clumsy Crown
+		Tooltip: ""
+	}
+
+	CoreflameOfShadows: {
+		DisplayName: Coreflame Of Shadows
+		Tooltip: ""
+	}
+
+	FracturedSoul: {
+		DisplayName: Fractured Soul
+		Tooltip: ""
+	}
+
+	HeadOfSnakes: {
+		DisplayName: Head Of Snakes
+		Tooltip: ""
+	}
+
+	HitmansMark: {
+		DisplayName: Hitmans Mark
+		Tooltip: ""
+	}
+
+	HolyShield: {
+		DisplayName: Holy Shield
+		Tooltip: ""
+	}
+
+	HyjackedSignal: {
+		DisplayName: Hyjacked Signal
+		Tooltip: ""
+	}
+
+	InfectedChest: {
+		DisplayName: Infected Chest
+		Tooltip: ""
+	}
+
+	LoveLetter: {
+		DisplayName: Love Letter
+		Tooltip: ""
+	}
+
+	MagicalDust: {
+		DisplayName: Magical Dust
+		Tooltip: ""
+	}
+
+	MastersBelt: {
+		DisplayName: Masters Belt
+		Tooltip: ""
+	}
+
+	PermafrostCore: {
+		DisplayName: Permafrost Core
+		Tooltip: ""
+	}
+
+	ReallyBigLamp: {
+		DisplayName: Really Big Lamp
+		Tooltip: ""
+	}
+
+	SandstormCore: {
+		DisplayName: Sandstorm Core
+		Tooltip: ""
+	}
+
+	ShortStatue: {
+		DisplayName: Short Statue
+		Tooltip: ""
+	}
+
+	SlimyChest: {
+		DisplayName: Slimy Chest
+		Tooltip: ""
+	}
+
+	UnicornFart: {
+		DisplayName: Unicorn Fart
+		Tooltip: ""
+	}
+
+	VeryGoldCrown: {
+		DisplayName: Very Gold Crown
+		Tooltip: ""
+	}
+
+	PlunderedGoods: {
+		DisplayName: Plundered Goods
+		Tooltip: ""
+	}
+}
