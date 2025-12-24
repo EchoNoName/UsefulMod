@@ -9,7 +9,7 @@ namespace UsefulMod.Summons
 
         public override bool CanUseItem(Player player)
         {
-            return !Main.dayTime|| player.ZoneDirtLayerHeight || player.ZoneRockLayerHeight || player.ZoneUnderworldHeight;
+            return !Main.dayTime;
         }
         public override void AddRecipes() {  
             CreateRecipe()

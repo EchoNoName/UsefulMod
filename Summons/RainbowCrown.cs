@@ -3,7 +3,7 @@ using Terraria.ID;
 
 namespace UsefulMod.Summons
 {
-    public class UnicornFart : SummonTemplate
+    public class RainbowCrown : SummonTemplate
     {
         public override int SummonedNPCType => NPCID.RainbowSlime;
 
@@ -13,8 +13,16 @@ namespace UsefulMod.Summons
         }
         public override void AddRecipes() {  
             CreateRecipe()
+                .AddIngredient(ItemID.GoldBar, 10)
                 .AddIngredient(ItemID.UnicornHorn, 5)
-                .AddIngredient(ItemID.PixieDust, 35)
+                .AddIngredient(ItemID.PixieDust, 30)
+                .AddTile(TileID.Anvils)
+                .Register();
+            
+            CreateRecipe()
+                .AddIngredient(ItemID.PlatinumBar, 10)
+                .AddIngredient(ItemID.UnicornHorn, 5)
+                .AddIngredient(ItemID.PixieDust, 30)
                 .AddTile(TileID.Anvils)
                 .Register();
         }
