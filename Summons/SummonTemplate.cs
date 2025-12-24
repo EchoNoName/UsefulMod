@@ -54,7 +54,7 @@ namespace UsefulMod.Summons
 		public override bool? UseItem(Player player) {
 
             float x_spawn_cord = player.position.X + Main.rand.Next(-800, 800);
-            float y_spawn_cord = player.position.Y - Main.rand.Next(-800, -300);
+            float y_spawn_cord = player.position.Y + Main.rand.Next(-800, -300);
             if (player.whoAmI == Main.myPlayer)
                 SoundEngine.PlaySound(SoundID.Roar, player.position);
 
