@@ -108,26 +108,16 @@ namespace UsefulMod.Core
             recipe13.AddTile(TileID.DemonAltar);
             recipe13.Register();
 
-            Recipe recipe14 = Recipe.Create(ItemID.TruffleWorm, 2);
-            recipe14.AddIngredient(ItemID.TruffleWorm);
+            Recipe recipe14 = Recipe.Create(ItemID.EmpressButterfly);
+            recipe14.AddIngredient(ItemID.PixieDust, 20);
+            recipe14.AddIngredient(ItemID.SoulofLight, 5);
+            recipe14.AddIngredient(ItemID.Ectoplasm, 5);
             recipe14.AddTile(TileID.DemonAltar);
-            recipe14.Register();
 
-            Recipe recipe15 = Recipe.Create(ItemID.EmpressButterfly);
-            recipe15.AddIngredient(ItemID.PixieDust, 20);
-            recipe15.AddIngredient(ItemID.SoulofLight, 5);
-            recipe15.AddIngredient(ItemID.Ectoplasm, 5);
-            recipe15.AddTile(TileID.DemonAltar);
-
-            Recipe recipe16 = Recipe.Create(ItemID.EmpressButterfly, 2);
-            recipe16.AddIngredient(ItemID.EmpressButterfly);
-            recipe16.AddTile(TileID.DemonAltar);
-            recipe16.Register();
-
-            Recipe recipe17 = Recipe.Create(ItemID.Shroomerang);
-            recipe17.AddIngredient(ItemID.GlowingMushroom, 100);
-            recipe17.AddTile(TileID.Anvils);
-            recipe17.Register();
+            Recipe recipe15 = Recipe.Create(ItemID.Shroomerang);
+            recipe15.AddIngredient(ItemID.GlowingMushroom, 100);
+            recipe15.AddTile(TileID.Anvils);
+            recipe15.Register();
         }
 	}
 }
