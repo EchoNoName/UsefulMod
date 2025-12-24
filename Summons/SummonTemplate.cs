@@ -63,7 +63,10 @@ namespace UsefulMod.Summons
                         NPC.SpawnOnPlayer(player.whoAmI, SummonedNPCType);
                     }
                     else {
+                        LocalizedText text = Language.GetText("Announcement.HasAwoken");
                         int n = NPC.NewNPC(player.GetSource_ItemUse(Item), (int)x_spawn_cord, (int)y_spawn_cord, SummonedNPCType);
+                        String npcName = Lang.GetNPCNameValue(SummonedNPCType);
+                        ChatHelper.BroadcastChatMessage(text.ToNetworkText(npcName), new Color(175, 75, 255));
                     }
                 }
                 else {
