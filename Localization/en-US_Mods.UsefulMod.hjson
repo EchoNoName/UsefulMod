@@ -105,7 +105,7 @@ Items: {
 	}
 
 	GuidesSoul: {
-		DisplayName: Guide\'s Soul
+		DisplayName: Guide's Soul
 		Tooltip:
 			'''
 			Summons a Voodoo Demon.
@@ -340,7 +340,7 @@ Items: {
 	}
 
 	HitmansMark: {
-		DisplayName: Hitman\'s Mark
+		DisplayName: Hitman's Mark
 		Tooltip:
 			'''
 			Summons a Skeleton Sniper.
@@ -404,7 +404,7 @@ Items: {
 	}
 
 	MastersBelt: {
-		DisplayName: Master\'s Belt
+		DisplayName: Master's Belt
 		Tooltip:
 			'''
 			Summons Bone Lee.
