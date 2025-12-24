@@ -57,7 +57,7 @@ Items: {
 
 	PinkyCrown: {
 		DisplayName: Pinky Crown
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Pinky.
 			Non-Consumable
@@ -66,7 +66,7 @@ Items: {
 
 	DeadMansPick: {
 		DisplayName: Dead Mans Pick
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Undead Miner.
 			Can only be used at Night or Underground.
@@ -76,7 +76,7 @@ Items: {
 
 	TimsHat: {
 		DisplayName: Tims Hat
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons Tim.
 			Can only be used at Night or Underground.
@@ -86,7 +86,7 @@ Items: {
 
 	FossilizedSkeleton: {
 		DisplayName: Fossilized Skeleton
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons Doctor Bones.
 			Can only be used at Night or Underground.
@@ -96,7 +96,7 @@ Items: {
 
 	WeddingRing: {
 		DisplayName: Wedding Ring
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons The Bride.
 			Can only be used at Night or Underground.
@@ -106,7 +106,7 @@ Items: {
 
 	GuidesSoul: {
 		DisplayName: Guide\'s Soul
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Voodoo Demon.
 			Can only be used in Hell.
@@ -116,7 +116,7 @@ Items: {
 
 	SuspiciousGoldKey: {
 		DisplayName: Suspicious Gold Key
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Dungeon Slime.
 			Non-Consumable
@@ -124,7 +124,7 @@ Items: {
 	}
 
 	PileOfFruits: {
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a corresponding Beetle dependent on the Biome.
 			Ice: Cyan Beetle
@@ -137,7 +137,7 @@ Items: {
 	}
 
 	LitLantern: {
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Moth.
 			Non-Consumable
@@ -146,7 +146,7 @@ Items: {
 	}
 
 	FakeJellyfish: {
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Squid.
 			Non-Consumable
@@ -155,7 +155,7 @@ Items: {
 	}
 
 	DeclarationofWar: {
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Goblin Scout.
 			Non-Consumable
@@ -164,7 +164,7 @@ Items: {
 	}
 
 	ClownForHire: {
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Clown.
 			Can only be used at Night.
@@ -174,7 +174,7 @@ Items: {
 	}
 
 	Algae: {
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Sea Snail.
 			Non-Consumable
@@ -184,7 +184,7 @@ Items: {
 
 	SuspiciousChest: {
 		DisplayName: Suspicious Chest
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Mimic.
 			Summons a Ice Mimic when used on the Ice Biome
@@ -194,7 +194,7 @@ Items: {
 
 	ThePlank: {
 		DisplayName: The Plank
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Pirate Captain.
 			Non-Consumable
@@ -203,7 +203,7 @@ Items: {
 
 	ValentineChocolate: {
 		DisplayName: Valentine Chocolate
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Lost Girl.
 			Summons a Nymph in Hardmode.
@@ -214,7 +214,7 @@ Items: {
 
 	AssaultVest: {
 		DisplayName: Assault Vest
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Tactical Skeleton.
 			Non-Consumable
@@ -223,7 +223,7 @@ Items: {
 
 	BloodyEel: {
 		DisplayName: Bloody Eel
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Blood Eel.
 			Can only be used at Night.
@@ -233,7 +233,7 @@ Items: {
 
 	BloodyEye: {
 		DisplayName: Bloody Eye
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Wandering Eye.
 			Can only be used at Night.
@@ -243,7 +243,7 @@ Items: {
 
 	BloodyMollusk: {
 		DisplayName: Bloody Mollusk
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons Dreadnautilus.
 			Can only be used at Night.
@@ -253,7 +253,7 @@ Items: {
 
 	BloodyScale: {
 		DisplayName: Bloody Scale
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Zombie Merman.
 			Can only be used at Night.
@@ -263,7 +263,7 @@ Items: {
 
 	BloodyShark: {
 		DisplayName: Bloody Shark
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Hemogoblin Shark.
 			Can only be used at Night.
@@ -273,7 +273,7 @@ Items: {
 
 	BoneLicense: {
 		DisplayName: Bone License
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons the Skeleton Merchant.
 			Can only be used Underground.
@@ -283,7 +283,7 @@ Items: {
 
 	BurningGoggles: {
 		DisplayName: Burning Goggles
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Skeleton Commando.
 			Non-Consumable
@@ -292,7 +292,7 @@ Items: {
 
 	BurntEye: {
 		DisplayName: Burnt Eye
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Eyezor.
 			Can only be used in the Day.
@@ -302,7 +302,7 @@ Items: {
 
 	ClumsyCrown: {
 		DisplayName: Clumsy Crown
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons the Clumsy Balloon Slime.
 			Can only be used in Space.
@@ -312,7 +312,7 @@ Items: {
 
 	CoreflameOfShadows: {
 		DisplayName: Coreflame Of Shadows
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons the Goblin Warlock.
 			Non-Consumable
@@ -321,7 +321,7 @@ Items: {
 
 	FracturedSoul: {
 		DisplayName: Fractured Soul
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons the Tortured Soul.
 			Can only be used in Hell.
@@ -331,7 +331,7 @@ Items: {
 
 	HeadOfSnakes: {
 		DisplayName: Head Of Snakes
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons the Medusa.
 			Can only be used at Night or Underground.
@@ -341,7 +341,7 @@ Items: {
 
 	HitmansMark: {
 		DisplayName: Hitman\'s Mark
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Skeleton Sniper.
 			Non-Consumable
@@ -350,7 +350,7 @@ Items: {
 
 	HolyShield: {
 		DisplayName: Holy Shield
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Paladin.
 			Non-Consumable
@@ -359,7 +359,7 @@ Items: {
 
 	HyjackedSignal: {
 		DisplayName: Hyjacked Signal
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Martian Probe.
 			Can only be used in Space.
@@ -369,14 +369,14 @@ Items: {
 
 	InfectedChest: {
 		DisplayName: Infected Chest
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Biome Mimic.
 			Type summoned depends on the biome this item is used in.
 			Corruption: Corruption Mimic
 			Crimson: Crimson Mimic
 			Hallow: Hallow Mimic
-			If Fargo\'s Souls is enabled and it is Eternity difficulty or higher OR
+			If Fargo's Souls is enabled and it is Eternity difficulty or higher OR
 			In a Zenith/Celebrationmk10 World:
 			Jungle: Jungle Mimic
 			Can only be used in a valid Biome.
@@ -386,7 +386,7 @@ Items: {
 
 	LoveLetter: {
 		DisplayName: Love Letter
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons The Groom.
 			Can only be used at Night.
@@ -396,7 +396,7 @@ Items: {
 
 	MagicalDust: {
 		DisplayName: Magical Dust
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Mystic Frog.
 			Non-Consumable
@@ -405,7 +405,7 @@ Items: {
 
 	MastersBelt: {
 		DisplayName: Master\'s Belt
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons Bone Lee.
 			Non-Consumable
@@ -414,7 +414,7 @@ Items: {
 
 	PermafrostCore: {
 		DisplayName: Permafrost Core
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Ice Golem.
 			Can only be used in the Ice Biome.
@@ -424,7 +424,7 @@ Items: {
 
 	ReallyBigLamp: {
 		DisplayName: Really Big Lamp
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons Mothron.
 			Can only be used in an Eclipse.
@@ -434,7 +434,7 @@ Items: {
 
 	SandstormCore: {
 		DisplayName: Sandstorm Core
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Sand Elemental.
 			Can only be used in the Dessert Biome.
@@ -444,7 +444,7 @@ Items: {
 
 	ShortStatue: {
 		DisplayName: Short Statue
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Gnome.
 			Non-Consumable
@@ -453,7 +453,7 @@ Items: {
 
 	SlimyChest: {
 		DisplayName: Slimy Chest
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons the Old Shaking Chest.
 			Non-Consumable
@@ -462,7 +462,7 @@ Items: {
 
 	RainbowCrown: {
 		DisplayName: Rainbow Crown
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Rainbow Slime.
 			Non-Consumable
@@ -471,7 +471,7 @@ Items: {
 
 	VeryGoldCrown: {
 		DisplayName: Very Gold Crown
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons the Golden Slime.
 			Non-Consumable
@@ -480,7 +480,7 @@ Items: {
 
 	PlunderedGoods: {
 		DisplayName: Plundered Goods
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons The Dutchman.
 			Non-Consumable
