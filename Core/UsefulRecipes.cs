@@ -123,6 +123,11 @@ namespace UsefulMod.Core
             recipe16.AddIngredient(ItemID.EmpressButterfly);
             recipe16.AddTile(TileID.DemonAltar);
             recipe16.Register();
+
+            Recipe recipe17 = Recipe.Create(ItemID.Shroomerang);
+            recipe17.AddIngredient(ItemID.GlowingMushroom, 100);
+            recipe17.AddTile(TileID.Anvils);
+            recipe17.Register();
         }
 	}
 }
