@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ID;
 
-namespace UsefulMod.Summons
+namespace UsefulMod.Summons.Vanilla
 {
     public class BoneLicense : SummonTemplate
     {
@@ -9,7 +9,7 @@ namespace UsefulMod.Summons
 
         public override bool CanUseItem(Player player)
         {
-            return true;
+            return player.ZoneDirtLayerHeight || player.ZoneRockLayerHeight || player.ZoneUnderworldHeight;
         }
         public override void AddRecipes() {  
             CreateRecipe()

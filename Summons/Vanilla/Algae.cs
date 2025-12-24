@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using UsefulMod.Core;
 
-namespace UsefulMod.Summons
+namespace UsefulMod.Summons.Vanilla
 
 {
     public class Algae : SummonTemplate

@@ -1,7 +1,7 @@
 using Terraria;
 using Terraria.ID;
 
-namespace UsefulMod.Summons
+namespace UsefulMod.Summons.Vanilla
 {
     public class FakeJellyfish : SummonTemplate
     {

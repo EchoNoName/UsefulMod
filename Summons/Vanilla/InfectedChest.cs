@@ -2,7 +2,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace UsefulMod.Summons
+namespace UsefulMod.Summons.Vanilla
 {
     public class InfectedChest : SummonTemplate
     {
