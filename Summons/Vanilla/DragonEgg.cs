@@ -13,6 +13,7 @@ namespace UsefulMod.Summons.Vanilla
                 .AddIngredient(ItemID.SoulofNight, 10)
                 .AddIngredient(ItemID.SoulofLight, 10)
                 .AddIngredient(ItemID.Ectoplasm, 5)
+                .AddIngredient(ItemID.DD2ElderCrystal)
                 .AddTile(TileID.DemonAltar)
                 .Register();
         }

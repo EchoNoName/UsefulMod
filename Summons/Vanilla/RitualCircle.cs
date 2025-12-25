@@ -45,12 +45,14 @@ namespace UsefulMod.Summons.Vanilla
             CreateRecipe()
                 .AddIngredient(ItemID.DemoniteBar, 10)
                 .AddIngredient(ItemID.ShadowScale)
+                .AddIngredient(ItemID.DD2ElderCrystal)
                 .AddTile(TileID.DemonAltar)
                 .Register();
             
             CreateRecipe()
                 .AddIngredient(ItemID.CrimtaneBar, 10)
                 .AddIngredient(ItemID.TissueSample)
+                .AddIngredient(ItemID.DD2ElderCrystal)
                 .AddTile(TileID.DemonAltar)
                 .Register();
         }

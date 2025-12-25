@@ -11,18 +11,21 @@ namespace UsefulMod.Summons.Vanilla
             CreateRecipe()
                 .AddIngredient(ItemID.Wood, 100)
                 .AddIngredient(ItemID.SoulofFright)
+                .AddIngredient(ItemID.DD2ElderCrystal)
                 .AddTile(TileID.DemonAltar)
                 .Register();
             
             CreateRecipe()
                 .AddIngredient(ItemID.Wood, 100)
                 .AddIngredient(ItemID.SoulofSight)
+                .AddIngredient(ItemID.DD2ElderCrystal)
                 .AddTile(TileID.DemonAltar)
                 .Register();
             
             CreateRecipe()
                 .AddIngredient(ItemID.Wood, 100)
                 .AddIngredient(ItemID.SoulofMight)
+                .AddIngredient(ItemID.DD2ElderCrystal)
                 .AddTile(TileID.DemonAltar)
                 .Register();
         }
