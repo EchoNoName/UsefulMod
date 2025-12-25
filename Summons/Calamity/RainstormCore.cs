@@ -14,6 +14,10 @@ namespace UsefulMod.Summons.Calamity
 
         public override void AddRecipes() {  
             CreateRecipe()
+            .AddIngredient(ItemID.Cloud, 100)
+            .AddIngredient(ItemID.RainCloud, 20)
+            .AddIngredient(ItemID.SoulofLight, 10)
+            .AddTile(TileID.Anvils)
                 .Register();
         }
     }

@@ -7,6 +7,7 @@ namespace UsefulMod.Summons.Vanilla
     {
         public override int SummonedNPCType => !Main.dayTime ? NPCID.SkeletronHead : NPCID.DungeonGuardian;
 
+        public override bool IsBoss => true;
         public override bool CanUseItem(Player player)
         {
             return !NPC.AnyNPCs(SummonedNPCType);
