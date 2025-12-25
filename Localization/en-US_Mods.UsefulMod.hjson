@@ -17,7 +17,7 @@ NPCs: {
 			Content: I am content.
 		}
 
-		DisplayName: Summon N P C
+		DisplayName: Collector
 		DeathMessage: Mods.UsefulMod.NPCs.SummonNPC.DeathMessage
 	}
 
@@ -39,7 +39,7 @@ NPCs: {
 			Content: I am content.
 		}
 
-		DisplayName: P
+		DisplayName: Wall
 		DeathMessage: "P died. "
 	}
 }
