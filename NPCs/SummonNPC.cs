@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Terraria;
 using Terraria.Audio;
+using Terraria.Localization;
 using Terraria.DataStructures;
 using Terraria.GameContent;
 using Terraria.GameContent.Bestiary;
@@ -12,10 +13,11 @@ using Terraria.GameContent.ItemDropRules;
 using Terraria.GameContent.Personalities;
 using Terraria.GameContent.UI;
 using Terraria.ID;
-using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 using Terraria.Utilities;
+using UsefulMod.Summons.Vanilla;
+using UsefulMod.Summons.Calamity;
 
 
 namespace UsefulMod.NPCs
@@ -63,6 +65,7 @@ namespace UsefulMod.NPCs
 			NPC.HitSound = SoundID.NPCHit1;
 			NPC.DeathSound = SoundID.NPCDeath1;
 			NPC.knockBackResist = 0.5f;
+			NPC.dontTakeDamage = true;
 
 			AnimationType = NPCID.Guide;
 		}
@@ -95,7 +98,7 @@ namespace UsefulMod.NPCs
 
 		public override List<string> SetNPCNameList() {
 			return new List<string>() {
-				"P"
+				"Q"
 			};
 		}
 
@@ -114,54 +117,209 @@ namespace UsefulMod.NPCs
 			string chosenChat = chat; // chat is implicitly cast to a string. This is where the random choice is made.
 			return chosenChat;
 		}
-        private const string ShopName1 = "Perma Upgrades";
+        private const string ShopName1 = "Rare Enemies";
+		private const string ShopName2 = "Event Enemies";
+		private static int shopNum = 1;
         public override void SetChatButtons(ref string button, ref string button2)
         {
-            // The text of the two chat buttons
-            button = "Perma Upgrades"; // This opens the shop
-            button2 = "Goodbye"; // This just closes the chat
+			button2 = "Cycle Shop";
+			shopNum = 1;
+            switch (shopNum)
+            {
+                case 1:
+                    button = "Rare Enemies";
+                    break;
+
+                case 2:
+                    button = "Event Enemies";
+                    break;
+
+                default:
+                    button = "Rare Enemies";
+                    break;
+            }
         }
 
         public override void OnChatButtonClicked(bool firstButton, ref string shop)
         {
-            if (firstButton)
-            {
-                shop = ShopName1;
-            }
+            if (firstButton) {
+                switch (shopNum)
+                {
+                    case 1:
+                        shop = ShopName1;
+                        break;
+                    case 2:
+                        shop = ShopName2;
+                        break;
+                    default:
+                        shop = ShopName1;
+                        break;
+                }
+            } else {
+				shopNum++;
+				if (shopNum > 2) {
+					shopNum = 1;
+				}
+			}
         }
 
         public override void AddShops()
         {
             // Register the empty shop (so the name is valid when we fill it later)
-            var npcShop = new NPCShop(Type, ShopName1);
+            var rareEnemyShop = new NPCShop(Type, ShopName1);
+			var eventEnemyShop = new NPCShop(Type, ShopName2);
 
 			Player player = Main.LocalPlayer;
-
-			npcShop.Add(new Item(ItemID.LifeCrystal) {shopCustomPrice = 1}); 
-			npcShop.Add(new Item(ItemID.AegisCrystal) {shopCustomPrice = 1});
-			npcShop.Add(new Item(ItemID.ManaCrystal) {shopCustomPrice = 1});
-			npcShop.Add(new Item(ItemID.ArcaneCrystal) {shopCustomPrice = 1});
-			npcShop.Add(new Item(ItemID.GalaxyPearl) {shopCustomPrice = 1});
-			npcShop.Add(new Item(ItemID.GummyWorm) {shopCustomPrice = 1});
-			npcShop.Add(new Item(ItemID.Ambrosia) {shopCustomPrice = 1});
-			npcShop.Add(new Item(ItemID.PeddlersSatchel) {shopCustomPrice = 1});
-			npcShop.Add(new Item(ItemID.CombatBook) {shopCustomPrice = 1});
-			npcShop.Add(new Item(ItemID.CombatBookVolumeTwo) {shopCustomPrice = 1}, Condition.Hardmode);
-			if (ModLoader.TryGetMod("CalamityMod", out Mod calamityMod)) {
-				npcShop.Add(new Item(ItemID.LifeFruit) {shopCustomPrice = 1}, Condition.Hardmode);
-				npcShop.Add(new Item(ItemID.AegisFruit) {shopCustomPrice = 1}, Condition.Hardmode);
-				npcShop.Add(new Item(calamityMod.Find<ModItem>("CometShard").Type) { shopCustomPrice = 1 }, Condition.Hardmode);
-				npcShop.Add(new Item(calamityMod.Find<ModItem>("BloodOrange").Type) { shopCustomPrice = 1 }, Condition.DownedMechBossAll);
-				npcShop.Add(new Item(calamityMod.Find<ModItem>("MiracleFruit").Type) { shopCustomPrice = 1 }, Condition.DownedGolem);
-				npcShop.Add(new Item(calamityMod.Find<ModItem>("EtherealCore").Type) { shopCustomPrice = 1 }, new Condition("Mods.allPurposeNPC.DownedNebulaTower", () => NPC.downedTowerNebula));
-				npcShop.Add(new Item(calamityMod.Find<ModItem>("PhantomHeart").Type) { shopCustomPrice = 1 }, new Condition("Mods.allPurposeNPC.DownedPolterghast", () => (bool)calamityMod.Call("GetBossDowned", "polterghast")));
-				npcShop.Add(new Item(calamityMod.Find<ModItem>("Elderberry").Type) { shopCustomPrice = 1 }, new Condition("Mods.allPurposeNPC.DownedProvidence", () => (bool)calamityMod.Call("GetBossDowned", "providence"))); 
-				npcShop.Add(new Item(calamityMod.Find<ModItem>("Dragonfruit").Type) { shopCustomPrice = 1 }, new Condition("Mods.allPurposeNPC.DownedYharon", () => (bool)calamityMod.Call("GetBossDowned", "yharon")));
+			
+			rareEnemyShop.Add(new Item(ModContent.ItemType<ClumsyCrown>()) {shopCustomPrice = 1});
+			rareEnemyShop.Add(new Item(ModContent.ItemType<MagicalDust>()) {shopCustomPrice = 1}); 
+			rareEnemyShop.Add(new Item(ModContent.ItemType<SlimyChest>()) {shopCustomPrice = 1}, Condition.DownedSkeletron);  
+			rareEnemyShop.Add(new Item(ModContent.ItemType<PinkyCrown>()) {shopCustomPrice = 1}); 
+			rareEnemyShop.Add(new Item(ModContent.ItemType<DeadMansPick>()) {shopCustomPrice = 1}); 
+			rareEnemyShop.Add(new Item(ModContent.ItemType<LoveLetter>()) {shopCustomPrice = 1}); 
+			rareEnemyShop.Add(new Item(ModContent.ItemType<WeddingRing>()) {shopCustomPrice = 1}); 
+			rareEnemyShop.Add(new Item(ModContent.ItemType<FossilizedSkeleton>()) {shopCustomPrice = 1});
+			rareEnemyShop.Add(new Item(ModContent.ItemType<ValentineChocolate>()) {shopCustomPrice = 1}); 
+			rareEnemyShop.Add(new Item(ModContent.ItemType<VeryGoldCrown>()) {shopCustomPrice = 1}); 
+			rareEnemyShop.Add(new Item(ModContent.ItemType<TimsHat>()) {shopCustomPrice = 1}); 
+			rareEnemyShop.Add(new Item(ModContent.ItemType<DeclarationofWar>()) {shopCustomPrice = 1}); 
+			rareEnemyShop.Add(new Item(ModContent.ItemType<ShortStatue>()) {shopCustomPrice = 1}); 
+			rareEnemyShop.Add(new Item(ModContent.ItemType<PileOfFruits>()) {shopCustomPrice = 1}); 
+			rareEnemyShop.Add(new Item(ModContent.ItemType<Algae>()) {shopCustomPrice = 1}); 
+			rareEnemyShop.Add(new Item(ModContent.ItemType<FakeJellyfish>()) {shopCustomPrice = 1}); 
+			rareEnemyShop.Add(new Item(ModContent.ItemType<GuidesSoul>()) {shopCustomPrice = 1});
+			eventEnemyShop.Add(new Item(ModContent.ItemType<BloodyScale>()) {shopCustomPrice = 1});
+			eventEnemyShop.Add(new Item(ModContent.ItemType<BloodyEye>()) {shopCustomPrice = 1});
+			eventEnemyShop.Add(new Item(ModContent.ItemType<BloodyShark>()) {shopCustomPrice = 1}, Condition.Hardmode);
+			eventEnemyShop.Add(new Item(ModContent.ItemType<BloodyEel>()) {shopCustomPrice = 1}, Condition.Hardmode);
+			eventEnemyShop.Add(new Item(ModContent.ItemType<BloodyMollusk>()) {shopCustomPrice = 1}, Condition.Hardmode);
+			eventEnemyShop.Add(new Item(ModContent.ItemType<RitualCircle>()) {shopCustomPrice = 1}, Condition.DownedEyeOfCthulhu);
+			eventEnemyShop.Add(new Item(ModContent.ItemType<MassiveClub>()) {shopCustomPrice = 1}, Condition.DownedMechBossAny);
+			eventEnemyShop.Add(new Item(ModContent.ItemType<DragonEgg>()) {shopCustomPrice = 1}, Condition.DownedGolem);
+			eventEnemyShop.Add(new Item(ModContent.ItemType<MartianCommunicationDevice>()) {shopCustomPrice = 1}, Condition.DownedGolem);
+			eventEnemyShop.Add(new Item(ModContent.ItemType<ThePlank>()) {shopCustomPrice = 1}, Condition.Hardmode);
+			eventEnemyShop.Add(new Item(ModContent.ItemType<PlunderedGoods>()) {shopCustomPrice = 1}, Condition.Hardmode);
+			eventEnemyShop.Add(new Item(ModContent.ItemType<CoreflameOfShadows>()) {shopCustomPrice = 1}, Condition.Hardmode);
+			if (ModLoader.TryGetMod("CalamityMod", out Mod calamityMod) && ModLoader.TryGetMod("FargowiltasSouls", out Mod fargosSouls)) {
+				rareEnemyShop.Add(new Item(ModContent.ItemType<TrojanHorse>()) {shopCustomPrice = 1}); 
+				rareEnemyShop.Add(new Item(ModContent.ItemType<SandstormCore>()) {shopCustomPrice = 1}); 
+				rareEnemyShop.Add(new Item(ModContent.ItemType<PermafrostCore>()) {shopCustomPrice = 1}); 
+				rareEnemyShop.Add(new Item(ModContent.ItemType<RainstormCore>()) {shopCustomPrice = 1}, Condition.Hardmode); 
+				rareEnemyShop.Add(new Item(ModContent.ItemType<SeismicCore>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<SuspiciousChest>()) {shopCustomPrice = 1});
+				rareEnemyShop.Add(new Item(ModContent.ItemType<SlimyKey>()) {shopCustomPrice = 1}, Condition.DownedSkeletron);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<ClownForHire>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<AncientRunes>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<LitLantern>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<RainbowCrown>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<BurntEye>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<InfectedChest>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<HeadOfSnakes>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<FracturedSoul>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<FrigidIce>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<InfectedStone>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<ColossalBait>()) {shopCustomPrice = 1}, new Condition("Mods.allPurposeNPC.DownedAnahita", () => (bool)calamityMod.Call("GetBossDowned", "anahita")));
+				rareEnemyShop.Add(new Item(ModContent.ItemType<LunarRelic>()) {shopCustomPrice = 1}, new Condition("Mods.allPurposeNPC.DownedCalCloneOrWof", () => Main.hardMode || (bool)calamityMod.Call("GetBossDowned", "calamitasclone")));
+				rareEnemyShop.Add(new Item(ModContent.ItemType<TankOfBlood>()) {shopCustomPrice = 1}, new Condition("Mods.allPurposeNPC.DownedPolterghast", () => (bool)calamityMod.Call("GetBossDowned", "polterghast")));
+				rareEnemyShop.Add(new Item(ModContent.ItemType<AssaultVest>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<HitmansMark>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<BurningGoggles>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<HolyShield>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<MastersBelt>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<RaggedCloak>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<PileOfTombstones>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<InfernalRitual>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<HyjackedSignal>()) {shopCustomPrice = 1}, Condition.DownedGolem);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<ToxicBeehive>()) {shopCustomPrice = 1}, Condition.DownedGolem);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<ChaoticEnergy>()) {shopCustomPrice = 1}, Condition.DownedMoonLord);
+				eventEnemyShop.Add(new Item(ModContent.ItemType<ReallyBigLamp>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				eventEnemyShop.Add(new Item(ModContent.ItemType<AcidicTrap>()) {shopCustomPrice = 1}, new Condition("Mods.allPurposeNPC.DownedAquaticScourge", () => (bool)calamityMod.Call("GetBossDowned", "aquaticscourge")));
+				eventEnemyShop.Add(new Item(ModContent.ItemType<ReactiveBait>()) {shopCustomPrice = 1}, new Condition("Mods.allPurposeNPC.DownedPolterghast", () => (bool)calamityMod.Call("GetBossDowned", "polterghast")));
+				eventEnemyShop.Add(new Item(ModContent.ItemType<NuclearWaste>()) {shopCustomPrice = 1}, new Condition("Mods.allPurposeNPC.DownedPolterghast", () => (bool)calamityMod.Call("GetBossDowned", "polterghast")));
+			} else if (ModLoader.TryGetMod("CalamityMod", out Mod calamity)) {
+				rareEnemyShop.Add(new Item(ModContent.ItemType<TrojanHorse>()) {shopCustomPrice = 1}); 
+				rareEnemyShop.Add(new Item(ModContent.ItemType<SlimyKey>()) {shopCustomPrice = 1}, Condition.DownedSkeletron);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<SuspiciousChest>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<SandstormCore>()) {shopCustomPrice = 1}, Condition.Hardmode); 
+				rareEnemyShop.Add(new Item(ModContent.ItemType<PermafrostCore>()) {shopCustomPrice = 1}, Condition.Hardmode); 
+				rareEnemyShop.Add(new Item(ModContent.ItemType<RainstormCore>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<SeismicCore>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<ClownForHire>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<AncientRunes>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<LitLantern>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<RainbowCrown>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<BurntEye>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<InfectedChest>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<HeadOfSnakes>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<FracturedSoul>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<FrigidIce>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<InfectedStone>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<ColossalBait>()) {shopCustomPrice = 1}, new Condition("Mods.allPurposeNPC.DownedAnahita", () => (bool)calamityMod.Call("GetBossDowned", "anahita")));
+				rareEnemyShop.Add(new Item(ModContent.ItemType<LunarRelic>()) {shopCustomPrice = 1}, new Condition("Mods.allPurposeNPC.DownedCalCloneOrWof", () => Main.hardMode || (bool)calamityMod.Call("GetBossDowned", "calamitasclone")));
+				rareEnemyShop.Add(new Item(ModContent.ItemType<TankOfBlood>()) {shopCustomPrice = 1}, new Condition("Mods.allPurposeNPC.DownedPolterghast", () => (bool)calamityMod.Call("GetBossDowned", "polterghast")));
+				rareEnemyShop.Add(new Item(ModContent.ItemType<AssaultVest>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<HitmansMark>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<BurningGoggles>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<HolyShield>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<MastersBelt>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<RaggedCloak>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<PileOfTombstones>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<InfernalRitual>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<HyjackedSignal>()) {shopCustomPrice = 1}, Condition.DownedGolem);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<ToxicBeehive>()) {shopCustomPrice = 1}, Condition.DownedGolem);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<ChaoticEnergy>()) {shopCustomPrice = 1}, Condition.DownedMoonLord);
+				eventEnemyShop.Add(new Item(ModContent.ItemType<ReallyBigLamp>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				eventEnemyShop.Add(new Item(ModContent.ItemType<AcidicTrap>()) {shopCustomPrice = 1}, new Condition("Mods.allPurposeNPC.DownedAquaticScourge", () => (bool)calamityMod.Call("GetBossDowned", "aquaticscourge")));
+				eventEnemyShop.Add(new Item(ModContent.ItemType<ReactiveBait>()) {shopCustomPrice = 1}, new Condition("Mods.allPurposeNPC.DownedPolterghast", () => (bool)calamityMod.Call("GetBossDowned", "polterghast")));
+				eventEnemyShop.Add(new Item(ModContent.ItemType<NuclearWaste>()) {shopCustomPrice = 1}, new Condition("Mods.allPurposeNPC.DownedPolterghast", () => (bool)calamityMod.Call("GetBossDowned", "polterghast")));
+			} else if (ModLoader.TryGetMod("FargowiltasSouls", out Mod fargos)) {
+				rareEnemyShop.Add(new Item(ModContent.ItemType<SandstormCore>()) {shopCustomPrice = 1}); 
+				rareEnemyShop.Add(new Item(ModContent.ItemType<PermafrostCore>()) {shopCustomPrice = 1}); 
+				rareEnemyShop.Add(new Item(ModContent.ItemType<SuspiciousChest>()) {shopCustomPrice = 1});
+				rareEnemyShop.Add(new Item(ModContent.ItemType<SlimyKey>()) {shopCustomPrice = 1}, Condition.DownedSkeletron);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<ClownForHire>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<AncientRunes>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<LitLantern>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<RainbowCrown>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<BurntEye>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<InfectedChest>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<HeadOfSnakes>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<FracturedSoul>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<AssaultVest>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<HitmansMark>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<BurningGoggles>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<HolyShield>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<MastersBelt>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<RaggedCloak>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<PileOfTombstones>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<InfernalRitual>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<HyjackedSignal>()) {shopCustomPrice = 1}, Condition.DownedGolem);
+				eventEnemyShop.Add(new Item(ModContent.ItemType<ReallyBigLamp>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
 			} else {
-				npcShop.Add(new Item(ItemID.LifeFruit) {shopCustomPrice = 1}, Condition.DownedMechBossAny);
-				npcShop.Add(new Item(ItemID.AegisFruit) {shopCustomPrice = 1}, Condition.DownedMechBossAny);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<SlimyKey>()) {shopCustomPrice = 1}, Condition.DownedSkeletron); 
+				rareEnemyShop.Add(new Item(ModContent.ItemType<SuspiciousChest>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<SandstormCore>()) {shopCustomPrice = 1}, Condition.Hardmode); 
+				rareEnemyShop.Add(new Item(ModContent.ItemType<PermafrostCore>()) {shopCustomPrice = 1}, Condition.Hardmode); 
+				rareEnemyShop.Add(new Item(ModContent.ItemType<ClownForHire>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<AncientRunes>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<LitLantern>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<RainbowCrown>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<BurntEye>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<InfectedChest>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<HeadOfSnakes>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<FracturedSoul>()) {shopCustomPrice = 1}, Condition.Hardmode);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<AssaultVest>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<HitmansMark>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<BurningGoggles>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<HolyShield>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<MastersBelt>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<RaggedCloak>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<PileOfTombstones>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				rareEnemyShop.Add(new Item(ModContent.ItemType<InfernalRitual>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
+				eventEnemyShop.Add(new Item(ModContent.ItemType<ReallyBigLamp>()) {shopCustomPrice = 1}, Condition.DownedPlantera);
 			}
-            npcShop.Register();
+            rareEnemyShop.Register();
+			eventEnemyShop.Register();
         }
 	}
 }
