@@ -6,16 +6,15 @@ namespace UsefulMod.Summons.Calamity
 {
 [ExtendsFromMod("CalamityMod")]
 [JITWhenModsEnabled("CalamityMod")]
-    public class RainstormCore : SummonTemplate
+    public class InfectedStone : SummonTemplate
     {
         public override bool IsLoadingEnabled(Mod mod) => ModLoader.HasMod("CalamityMod");
-        public override int SummonedNPCType => ModContent.Find<ModNPC>("CalamityMod", "ThiccWaifu").Type;
+        public override int SummonedNPCType => ModContent.Find<ModNPC>("CalamityMod", "Atlas").Type;
 
         public override void AddRecipes() {  
             CreateRecipe()
-            .AddIngredient(ItemID.Cloud, 100)
-            .AddIngredient(ItemID.RainCloud, 20)
-            .AddIngredient(ItemID.SoulofLight, 10)
+            .AddIngredient(ModContent.Find<ModItem>("CalamityMod", "AstralMonolith"), 20)
+            .AddIngredient(ModContent.Find<ModItem>("CalamityMod", "AstralStone"), 50)
             .AddTile(TileID.Anvils)
                 .Register();
         }
