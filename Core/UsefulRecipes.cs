@@ -10,7 +10,7 @@ namespace UsefulMod.Core
 		public override void AddRecipeGroups()
 		{
 			RecipeGroup group = new RecipeGroup(
-                () => $"{Language.GetTextValue("LegacyMisc.37")} " +  $"{Lang.GetItemNameValue(ItemID.HerbBag)} " +  $"{Language.GetTextValue("LegacyMisc.39")}",
+                () => $"{Language.GetTextValue("LegacyMisc.37")} " +  $"{Lang.GetItemNameValue(ItemID.HerbBag)} " + $"{Language.GetTextValue("Material")}",
                 ItemID.Daybloom,
                 ItemID.Moonglow,
                 ItemID.Blinkroot,
