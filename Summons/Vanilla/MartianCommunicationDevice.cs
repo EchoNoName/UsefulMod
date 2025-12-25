@@ -6,7 +6,7 @@ namespace UsefulMod.Summons.Vanilla
 {
     public class MartianCommunicationDevice : SummonTemplate
     {
-        public override int SummonedNPCType => NPCID.MartianSaucer;
+        public override int SummonedNPCType => NPCID.MartianSaucerCore;
 
 
         public override bool CanUseItem(Player player)
