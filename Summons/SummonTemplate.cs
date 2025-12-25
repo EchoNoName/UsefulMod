@@ -49,7 +49,8 @@ namespace UsefulMod.Summons
                 if (Main.netMode != NetmodeID.MultiplayerClient) {
                     if (IsBoss) {
                         Vector2 spawnPosition = player.Center;
-                        NPC.SpawnBoss((int)spawnPosition.X, (int)(spawnPosition.Y - 600f), SummonedNPCType, player.whoAmI);
+                        int x_off_set = Main.rand.NextBool() ? Main.rand.Next(1000, 1201) : Main.rand.Next(-1200, -999);
+                        NPC.SpawnBoss((int)(spawnPosition.X + x_off_set), (int)(spawnPosition.Y - 1000f), SummonedNPCType, player.whoAmI);
                     }
                     else {
                         LocalizedText text = Language.GetText("Announcement.HasAwoken");
