@@ -114,15 +114,6 @@ Items: {
 			'''
 	}
 
-	SuspiciousGoldKey: {
-		DisplayName: Suspicious Gold Key
-		Tooltip:
-			'''
-			Summons a Dungeon Slime.
-			Non-Consumable
-			'''
-	}
-
 	PileOfFruits: {
 		Tooltip:
 			'''
@@ -722,7 +713,7 @@ Items: {
 
 	DragonEgg: {
 		DisplayName: Dragon Egg
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons Betsy.
 			Non-Consumable
@@ -731,7 +722,7 @@ Items: {
 
 	MassiveClub: {
 		DisplayName: Massive Club
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons an Ogre.
 			Non-Consumable
@@ -740,10 +731,19 @@ Items: {
 
 	RitualCircle: {
 		DisplayName: Ritual Circle
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons Dark Mage.
 			Non-Consumable
 			'''
+	}
+
+	SlimyKey: {
+		Tooltip: 
+			'''
+			Summons a Dungeon Slime.
+			Non-Consumable
+			'''
+		DisplayName: Slimy Key
 	}
 }
