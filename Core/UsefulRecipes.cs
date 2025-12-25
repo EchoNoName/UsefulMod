@@ -118,6 +118,16 @@ namespace UsefulMod.Core
             recipe15.AddIngredient(ItemID.GlowingMushroom, 100);
             recipe15.AddTile(TileID.Anvils);
             recipe15.Register();
+
+            // Calamity Recipes
+
+            if (ModLoader.TryGetMod("CalamityMod", out Mod calamity)) {
+                Recipe bloodWormSummon = Recipe.Create(ModContent.Find<ModItem>("CalamityMod", "BloodwormItem").Type);
+                bloodWormSummon.AddIngredient(ModContent.Find<ModItem>("CalamityMod", "BloodOrb"), 15);
+                bloodWormSummon.AddIngredient(ItemID.Worm);
+                bloodWormSummon.AddIngredient(ModContent.Find<ModItem>("CalamityMod", "RuinousSoul"));
+                bloodWormSummon.Register();
+            }
         }
 	}
 }
