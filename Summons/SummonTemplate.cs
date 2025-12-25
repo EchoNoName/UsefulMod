@@ -23,19 +23,7 @@ namespace UsefulMod.Summons
         /// </summary>
         public abstract int SummonedNPCType { get; }
 
-        public static readonly List<int> bosses = new List<int>
-        {
-            NPCID.EyeofCthulhu,
-            NPCID.KingSlime,
-            NPCID.QueenBee,
-            NPCID.SkeletronHead,
-            NPCID.WallofFlesh,
-            NPCID.Plantera,
-            NPCID.Golem,
-            NPCID.DukeFishron,
-            NPCID.CultistBoss,
-            NPCID.MoonLordCore
-        };
+        public virtual bool IsBoss { get; } = false;
 
         public override void SetStaticDefaults() {
             Item.ResearchUnlockCount = 1;
@@ -59,7 +47,7 @@ namespace UsefulMod.Summons
                 SoundEngine.PlaySound(SoundID.Roar, player.position);
 
                 if (Main.netMode != NetmodeID.MultiplayerClient) {
-                    if (bosses.Contains(SummonedNPCType)) {
+                    if (IsBoss) {
                         NPC.SpawnOnPlayer(player.whoAmI, SummonedNPCType);
                     }
                     else {
@@ -70,14 +58,17 @@ namespace UsefulMod.Summons
                     }
                 }
                 else {
-                    LocalizedText text = Language.GetText("Announcement.HasAwoken");
-                    int n = NPC.NewNPC(NPC.GetBossSpawnSource(Main.myPlayer), (int)x_spawn_cord, (int)y_spawn_cord, SummonedNPCType);
-                    String npcName = Lang.GetNPCNameValue(SummonedNPCType);
-                    if (n != Main.maxNPCs && Main.netMode == NetmodeID.Server)
-                        NetMessage.SendData(MessageID.SyncNPC, number: n);
-                        ChatHelper.BroadcastChatMessage(text.ToNetworkText(npcName), new Color(175, 75, 255));
-                        // Sends Has awoken message in chat for multuplayer
-
+                    if (IsBoss) {
+                        NPC.SpawnOnPlayer(player.whoAmI, SummonedNPCType);
+                    } else {
+                        LocalizedText text = Language.GetText("Announcement.HasAwoken");
+                        int n = NPC.NewNPC(NPC.GetBossSpawnSource(Main.myPlayer), (int)x_spawn_cord, (int)y_spawn_cord, SummonedNPCType);
+                        String npcName = Lang.GetNPCNameValue(SummonedNPCType);
+                        if (n != Main.maxNPCs && Main.netMode == NetmodeID.Server)
+                            NetMessage.SendData(MessageID.SyncNPC, number: n);
+                            ChatHelper.BroadcastChatMessage(text.ToNetworkText(npcName), new Color(175, 75, 255));
+                            // Sends Has awoken message in chat for multuplayer
+                    }
                 }
             return true;
         }
