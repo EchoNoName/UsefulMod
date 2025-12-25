@@ -517,7 +517,7 @@ Items: {
 
 	RainstormCore: {
 		DisplayName: Rainstorm Core
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Cloud Elemental.
 			Non-Consumable
@@ -526,7 +526,7 @@ Items: {
 
 	InfernalRitual: {
 		DisplayName: Infernal Ritual
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Diabolist.
 			Non-Consumable
@@ -535,7 +535,7 @@ Items: {
 
 	PileOfTombstones: {
 		DisplayName: Pile Of Tombstones
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Necromancer.
 			Non-Consumable
@@ -544,7 +544,7 @@ Items: {
 
 	RaggedCloak: {
 		DisplayName: Ragged Cloak
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Ragged Caster.
 			Non-Consumable
@@ -553,7 +553,7 @@ Items: {
 
 	VoiceRecorder: {
 		DisplayName: Voice Recorder
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons Anahita.
 			Can only be used in the clean Ocean.
@@ -562,7 +562,7 @@ Items: {
 	}
 
 	SuspiciousClam: {
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons the Giant Clam.
 			Can only be used in the Sunken Sea.
@@ -572,7 +572,7 @@ Items: {
 	}
 
 	RottenNerves: {
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons the Hivemind when used in the Corruption.
 			Summons the Perforator when used in the Crimson.
@@ -584,7 +584,7 @@ Items: {
 
 	TrojanHorse: {
 		DisplayName: Trojan Horse
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Cnidrion.
 			Non-Consumable
@@ -592,7 +592,7 @@ Items: {
 	}
 
 	ChaoticEnergy: {
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Overloaded Soldier.
 			Can only be used Underground.
@@ -602,7 +602,7 @@ Items: {
 	}
 
 	AcidicTrap: {
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Cragmaw Mire.
 			Can only be used in the Sulphuric Sea.
@@ -613,7 +613,7 @@ Items: {
 
 	ColossalBait: {
 		DisplayName: Colossal Bait
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons the Colossal Squid.
 			Can only be used in the 3rd layer of the Abyss or lower.
@@ -623,7 +623,7 @@ Items: {
 
 	FrigidIce: {
 		DisplayName: Frigid Ice
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons the Ice Clasper.
 			Can only be used in the Ice Biome.
@@ -633,7 +633,7 @@ Items: {
 
 	InfectedStone: {
 		DisplayName: Infected Stone
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons the Atlas.
 			Can only be used in the Astral Infection.
@@ -643,7 +643,7 @@ Items: {
 
 	LunarRelic: {
 		DisplayName: Lunar Relic
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons the Eidolist.
 			Can only be used in the 3rd layer of the Abyss or lower.
@@ -653,7 +653,7 @@ Items: {
 
 	NuclearWaste: {
 		DisplayName: Nuclear Waste
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons the Nuclear Terror.
 			Can only be used in the Sulphuric Sea.
@@ -663,7 +663,7 @@ Items: {
 
 	ReactiveBait: {
 		DisplayName: Reactive Bait
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Mauler.
 			Can only be used in the Sulphuric Sea.
@@ -673,7 +673,7 @@ Items: {
 
 	SeismicCore: {
 		DisplayName: Seismic Core
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Earth Elemental.
 			Can only be used in Underground.
@@ -683,7 +683,7 @@ Items: {
 
 	TankOfBlood: {
 		DisplayName: Tank Of Blood
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Reaver Shark.
 			Can only be used in the 4th layer of the Abyss.
@@ -693,7 +693,7 @@ Items: {
 
 	ToxicBeehive: {
 		DisplayName: Toxic Beehive
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Plaguebringer.
 			Can only be used in the Jungle Biome.
@@ -703,7 +703,7 @@ Items: {
 
 	MartianCommunicationDevice: {
 		DisplayName: Martian Communication Device
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Martian Saucer.
 			Non-Consumable
@@ -712,7 +712,7 @@ Items: {
 
 	BloodOil: {
 		DisplayName: Blood Oil
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons The Old Duke.
 			Can only be used in the Sulphuric Sea.
