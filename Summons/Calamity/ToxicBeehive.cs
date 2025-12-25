@@ -13,7 +13,7 @@ namespace UsefulMod.Summons.Calamity
 
         public override bool CanUseItem(Player player)
         {
-            return player.ZoneDirtLayerHeight || player.ZoneRockLayerHeight || player.ZoneUnderworldHeight;
+            return player.ZoneJungle;
         }
         public override void AddRecipes() {  
             CreateRecipe()

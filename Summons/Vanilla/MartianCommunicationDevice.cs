@@ -11,7 +11,7 @@ namespace UsefulMod.Summons.Vanilla
 
         public override bool CanUseItem(Player player)
         {
-            return player.ZoneDesert;
+            return true;
         }
         public override void AddRecipes() {  
             CreateRecipe()

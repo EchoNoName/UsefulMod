@@ -11,6 +11,10 @@ namespace UsefulMod.Summons.Calamity
         public override bool IsLoadingEnabled(Mod mod) => ModLoader.HasMod("CalamityMod");
         public override int SummonedNPCType => ModContent.Find<ModNPC>("CalamityMod", "Horse").Type;
 
+        public override bool CanUseItem(Player player)
+        {
+            return player.ZoneDirtLayerHeight || player.ZoneRockLayerHeight || player.ZoneUnderworldHeight;
+        }
         public override void AddRecipes() {  
             CreateRecipe()
             .AddIngredient(ItemID.StoneBlock, 100)
