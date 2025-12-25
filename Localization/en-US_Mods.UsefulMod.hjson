@@ -719,4 +719,31 @@ Items: {
 			Non-Consumable
 			'''
 	}
+
+	DragonEgg: {
+		DisplayName: Dragon Egg
+		Tooltip: 
+			'''
+			Summons Betsy.
+			Non-Consumable
+			'''
+	}
+
+	MassiveClub: {
+		DisplayName: Massive Club
+		Tooltip: 
+			'''
+			Summons an Ogre.
+			Non-Consumable
+			'''
+	}
+
+	RitualCircle: {
+		DisplayName: Ritual Circle
+		Tooltip: 
+			'''
+			Summons Dark Mage.
+			Non-Consumable
+			'''
+	}
 }
