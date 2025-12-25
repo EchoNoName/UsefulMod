@@ -6,10 +6,12 @@ namespace UsefulMod.Summons.Calamity
 {
 [ExtendsFromMod("CalamityMod")]
 [JITWhenModsEnabled("CalamityMod")]
-    public class NuclearWaste : SummonTemplate
+    public class BloodOil : SummonTemplate
     {
         public override bool IsLoadingEnabled(Mod mod) => ModLoader.HasMod("CalamityMod");
-        public override int SummonedNPCType => ModContent.Find<ModNPC>("CalamityMod", "NuclearTerror").Type;
+        public override int SummonedNPCType => ModContent.Find<ModNPC>("CalamityMod", "OldDuke").Type;
+
+        public override bool IsBoss => true;
 
         public override bool CanUseItem(Player player)
         {
@@ -17,15 +19,12 @@ namespace UsefulMod.Summons.Calamity
             if (ModLoader.TryGetMod("CalamityMod", out Mod calamity)) {
                 inSulphurSea = (bool)calamity.Call("GetInZone", player, "sulfur");
             }
-            return inSulphurSea;
+            return !NPC.AnyNPCs(SummonedNPCType) && inSulphurSea;
         }
         public override void AddRecipes() {  
             CreateRecipe()
-                .AddIngredient(ModContent.Find<ModItem>("CalamityMod", "SulphuricScale"), 20)
-                .AddIngredient(ModContent.Find<ModItem>("CalamityMod", "Acidwood"), 15)
-                .AddIngredient(ModContent.Find<ModItem>("CalamityMod", "PlagueCellCanister"), 10)
-                .AddIngredient(ModContent.Find<ModItem>("CalamityMod", "RuinousSoul"))
-                .AddTile(TileID.MythrilAnvil)
+                .AddIngredient(ModContent.Find<ModItem>("CalamityMod", "BloodwormItem").Type)
+                .AddTile(TileID.CookingPots)
                 .Register();
         }
     }
