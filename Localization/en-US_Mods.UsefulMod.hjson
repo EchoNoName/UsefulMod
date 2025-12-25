@@ -489,7 +489,7 @@ Items: {
 
 	OminousSkull: {
 		DisplayName: Ominous Skull
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons Skeletron at Night.
 			Summons the Dungeon Guardian in the Day.
@@ -499,7 +499,7 @@ Items: {
 
 	PrismaticCore: {
 		DisplayName: Prismatic Core
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons The Empress of Light.
 			Non-Consumable
@@ -511,6 +511,211 @@ Items: {
 		Tooltip:
 			'''
 			Summons Duke Fishron.
+			Non-Consumable
+			'''
+	}
+
+	RainstormCore: {
+		DisplayName: Rainstorm Core
+		Tooltip: 
+			'''
+			Summons a Cloud Elemental.
+			Non-Consumable
+			'''
+	}
+
+	InfernalRitual: {
+		DisplayName: Infernal Ritual
+		Tooltip: 
+			'''
+			Summons a Diabolist.
+			Non-Consumable
+			'''
+	}
+
+	PileOfTombstones: {
+		DisplayName: Pile Of Tombstones
+		Tooltip: 
+			'''
+			Summons a Necromancer.
+			Non-Consumable
+			'''
+	}
+
+	RaggedCloak: {
+		DisplayName: Ragged Cloak
+		Tooltip: 
+			'''
+			Summons a Ragged Caster.
+			Non-Consumable
+			'''
+	}
+
+	VoiceRecorder: {
+		DisplayName: Voice Recorder
+		Tooltip: 
+			'''
+			Summons Anahita.
+			Can only be used in the clean Ocean.
+			Non-Consumable
+			'''
+	}
+
+	SuspiciousClam: {
+		Tooltip: 
+			'''
+			Summons the Giant Clam.
+			Can only be used in the Sunken Sea.
+			Non-Consumable
+			'''
+		DisplayName: Suspicious Clam
+	}
+
+	RottenNerves: {
+		Tooltip: 
+			'''
+			Summons the Hivemind when used in the Corruption.
+			Summons the Perforator when used in the Crimson.
+			Can only be used in a Evil Biome.
+			Non-Consumable
+			'''
+		DisplayName: Rotten Nerves
+	}
+
+	TrojanHorse: {
+		DisplayName: Trojan Horse
+		Tooltip: 
+			'''
+			Summons a Cnidrion.
+			Non-Consumable
+			'''
+	}
+
+	ChaoticEnergy: {
+		Tooltip: 
+			'''
+			Summons a Overloaded Soldier.
+			Can only be used Underground.
+			Non-Consumable
+			'''
+		DisplayName: Chaotic Energy
+	}
+
+	AcidicTrap: {
+		Tooltip: 
+			'''
+			Summons a Cragmaw Mire.
+			Can only be used in the Sulphuric Sea.
+			Non-Consumable
+			'''
+		DisplayName: Acidic Trap
+	}
+
+	ColossalBait: {
+		DisplayName: Colossal Bait
+		Tooltip: 
+			'''
+			Summons the Colossal Squid.
+			Can only be used in the 3rd layer of the Abyss or lower.
+			Non-Consumable
+			'''
+	}
+
+	FrigidIce: {
+		DisplayName: Frigid Ice
+		Tooltip: 
+			'''
+			Summons the Ice Clasper.
+			Can only be used in the Ice Biome.
+			Non-Consumable
+			'''
+	}
+
+	InfectedStone: {
+		DisplayName: Infected Stone
+		Tooltip: 
+			'''
+			Summons the Atlas.
+			Can only be used in the Astral Infection.
+			Non-Consumable
+			'''
+	}
+
+	LunarRelic: {
+		DisplayName: Lunar Relic
+		Tooltip: 
+			'''
+			Summons the Eidolist.
+			Can only be used in the 3rd layer of the Abyss or lower.
+			Non-Consumable
+			'''
+	}
+
+	NuclearWaste: {
+		DisplayName: Nuclear Waste
+		Tooltip: 
+			'''
+			Summons the Nuclear Terror.
+			Can only be used in the Sulphuric Sea.
+			Non-Consumable
+			'''
+	}
+
+	ReactiveBait: {
+		DisplayName: Reactive Bait
+		Tooltip: 
+			'''
+			Summons a Mauler.
+			Can only be used in the Sulphuric Sea.
+			Non-Consumable
+			'''
+	}
+
+	SeismicCore: {
+		DisplayName: Seismic Core
+		Tooltip: 
+			'''
+			Summons a Earth Elemental.
+			Can only be used in Underground.
+			Non-Consumable
+			'''
+	}
+
+	TankOfBlood: {
+		DisplayName: Tank Of Blood
+		Tooltip: 
+			'''
+			Summons a Reaver Shark.
+			Can only be used in the 4th layer of the Abyss.
+			Non-Consumable
+			'''
+	}
+
+	ToxicBeehive: {
+		DisplayName: Toxic Beehive
+		Tooltip: 
+			'''
+			Summons a Plaguebringer.
+			Can only be used in the Jungle Biome.
+			Non-Consumable
+			'''
+	}
+
+	MartianCommunicationDevice: {
+		DisplayName: Martian Communication Device
+		Tooltip: 
+			'''
+			Summons a Martian Saucer.
+			Non-Consumable
+			'''
+	}
+
+	BloodOil: {
+		DisplayName: Blood Oil
+		Tooltip: 
+			'''
+			Summons The Old Duke.
+			Can only be used in the Sulphuric Sea.
 			Non-Consumable
 			'''
 	}
