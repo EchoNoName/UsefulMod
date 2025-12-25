@@ -1,6 +1,5 @@
 using Terraria;
 using Terraria.ID;
-using UsefulMod.Core;
 
 namespace UsefulMod.Summons.Vanilla
 
