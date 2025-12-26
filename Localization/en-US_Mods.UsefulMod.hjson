@@ -1,20 +1,20 @@
 NPCs: {
 	SummonNPC: {
 		TownNPCMood: {
-			Princess_LovesNPC: I like {NPCName}.
-			LikeNPC_Princess: I like {NPCName}.
-			HateNPC: I hate {NPCName}.
-			DislikeNPC: I dislike {NPCName}.
-			LikeNPC: I like {NPCName}.
-			LoveNPC: I love {NPCName}.
-			DislikeBiome: I dislike {BiomeName}.
-			LikeBiome: I like {BiomeName}.
-			HateCrowded: I hate how crowded I am.
-			DislikeCrowded: I dislike how crowded I am.
-			LoveSpace: I love having so much space.
-			FarFromHome: I am too far from home.
-			NoHome: I hate not having a home.
-			Content: I am content.
+			Princess_LovesNPC: Q is an such an expert with animals, they know what all the pets likes to eat.
+			LikeNPC_Princess: The Princess... I wonder if her Kingdom has any rare creatures not found here.
+			HateNPC: The Arms Dealer... I've lost count of how many rare specimens they have killed, I really can't stant their presence.
+			DislikeNPC: {NPCName} the Demolitionist, I wish they would stop blowing up all my lures.
+			LikeNPC: {NPCName} the Zoologist demonstates great knownledge in the behavior of creatures, as her peer I offer my respects.
+			LoveNPC: {NPCName} always brings back specimens of pristine condition, a great partner to work with.
+			DislikeBiome: The Forest is so dull and boring, I need a place with more exotic creatures.
+			LikeBiome: The Jungle, a place filled with the most dangerous and rare speciments, a great place to set up.
+			HateCrowded: Theres too many people around here that can mess up my lures, I need somewhere with less people.
+			DislikeCrowded: Theres way too many people around here that can mess up my lures, I need somewhere with less people..
+			LoveSpace: A nice and secluded location, I can craft my lures in peace.
+			FarFromHome: It would appear that I have wandered very far from my home.
+			NoHome: Having a place to set up my lab would be nice.
+			Content: This location is nice.
 		}
 
 		DisplayName: Collector
@@ -24,20 +24,21 @@ NPCs: {
 
 	PermNPC: {
 		TownNPCMood: {
-			Princess_LovesNPC: I like {NPCName}.
-			LikeNPC_Princess: I like {NPCName}.
-			HateNPC: I hate {NPCName}.
-			DislikeNPC: I dislike {NPCName}.
-			LikeNPC: I like {NPCName}.
-			LoveNPC: I love {NPCName}.
-			DislikeBiome: I dislike {BiomeName}.
-			LikeBiome: I like {BiomeName}.
-			HateCrowded: I hate how crowded I am.
-			DislikeCrowded: I dislike how crowded I am.
-			LoveSpace: I love having so much space.
-			FarFromHome: I am too far from home.
-			NoHome: I hate not having a home.
-			Content: I am content.
+			Princess_LovesNPC: P might seem cold from a distance. But they're a nice person.
+			LikeNPC_Princess: {NPCName} the Princess has some great tea, I wonder who their supplier is.
+			HateNPC: I don't understand how anyone can live with the Angler, I would rather take a lava bath.
+			DislikeNPC: {NPCName} can cure someone isntantly even from the brink of death, it creeps me out.
+			LikeNPC: {NPCName} is a great person to be with, they deserve more respect.
+			LoveNPC: {NPCName} and I are from the same home town, it's always a pleasure to work with them.
+			DislikeBiome: I still get nightmares of rolling cacti, even though they can't hurt me anymore.
+			LikeBiome: The Jungle is a great place to settle down, the conditions are perfect for Life Fruits.
+			HateCrowded: There are way to many people living here, I'd perfer some peace and quiet.
+			DislikeCrowded: There are way to many people living here, I'd perfer some peace and quiet.
+			LoveSpace: Very little people... I can relax without being disturbed.
+			FarFromHome: It would seem that I am really far from my home. 
+			NoHome: I'd perfer having a house to live in.
+			
+			Content: This is acceptable.
 		}
 
 		DisplayName: Anomaly
