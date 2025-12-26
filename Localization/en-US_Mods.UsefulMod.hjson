@@ -18,7 +18,7 @@ NPCs: {
 		}
 
 		DisplayName: Collector
-		DeathMessage: Mods.UsefulMod.NPCs.SummonNPC.DeathMessage
+		DeathMessage: The Collector got collected.
 	}
 
 	PermNPC: {
@@ -39,8 +39,34 @@ NPCs: {
 			Content: I am content.
 		}
 
-		DisplayName: Wall
-		DeathMessage: "P died. "
+		DisplayName: Anomaly
+		Census.SpawnCondition: Have more than 100 Max Hp
+		DeathMessage: "The Anomaly has been corrected. "
+	}
+}
+
+Bestiary: {
+	SummonNPC: A mysterious being who collects living creatures.
+	SummonNPC2: Having mastered art of crafting Lures, they often contract others to collect rare creatures for them.
+	PermNPC: An Anomaly of this world, somehow managed to break the laws of Terraria and ate more than 15 Life Crystals.
+	PermNPC2: One can only wonder how many Life Crystals they ate to reach that amount of Health.
+}
+
+Dialogue: {
+	PermNPC: {
+		StandardDialogue1: Want some Life Crystals?
+		StandardDialogue2: ...
+		StandardDialogue3: Have you ever heard of this Mutant guy?
+		StandardDialogue4: Why do you only have that much health?
+		RareDialogue: I wonder if P can make a Omni-Lure.
+	}
+
+	SummonNPC: {
+		StandardDialogue1: If I don't have what you're looking for, come back after defeating some strong foes. Or contact E to make it for you.
+		StandardDialogue2: ... Oh, didn't see you there.
+		StandardDialogue3: You ever wonder why some lures just dissappears after using them?
+		StandardDialogue4: Have you seen any new rare creatures lately?
+		RareDialogue: For some reason, my lures seems to only attract enemies from above. Do you have any idea why?
 	}
 }
 
@@ -739,11 +765,21 @@ Items: {
 	}
 
 	SlimyKey: {
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Dungeon Slime.
 			Non-Consumable
 			'''
 		DisplayName: Slimy Key
+	}
+
+	AncientRunes: {
+		DisplayName: Ancient Runes
+		Tooltip:
+			'''
+			Summons the Rune Wizard.
+			Can only be used Underground.
+			Non-Consumable
+			'''
 	}
 }
