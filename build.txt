@@ -1,5 +1,5 @@
 displayName = Lazymans Mod
-author = Echo
-version = 0.1
+author = EchoNoName, GoldenWarrior 
+version = 1.0
 weakReferences = CalamityMod
-sortAfter = CalamityMod
+sortAfter = CalamityMod, FargowiltasSouls
