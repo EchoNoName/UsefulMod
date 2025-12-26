@@ -15,16 +15,14 @@ namespace UsefulMod.Summons.Vanilla
         public override void AddRecipes() {
 			// Gold version
 			CreateRecipe()
-				.AddIngredient(ItemID.IronPickaxe, 5)
-				.AddIngredient(ItemID.MiningHelmet, 5)
-				.AddIngredient(ItemID.StoneBlock, 100)
+				.AddIngredient(ItemID.IronPickaxe)
+				.AddIngredient(ItemID.StoneBlock, 25)
 				.AddTile(TileID.WorkBenches)
 				.Register();
             
             CreateRecipe()
-				.AddIngredient(ItemID.LeadPickaxe, 5)
-				.AddIngredient(ItemID.MiningHelmet, 5)
-				.AddIngredient(ItemID.StoneBlock, 100)
+				.AddIngredient(ItemID.LeadPickaxe)
+				.AddIngredient(ItemID.StoneBlock, 25)
 				.AddTile(TileID.WorkBenches)
 				.Register();
 		}

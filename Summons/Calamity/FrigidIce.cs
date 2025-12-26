@@ -18,7 +18,7 @@ namespace UsefulMod.Summons.Calamity
         public override void AddRecipes() {  
             CreateRecipe()
             .AddIngredient(ItemID.IceBlock, 100)
-            .AddIngredient(ModContent.Find<ModItem>("CalamityMod", "EssenceofEleum"), 5)
+            .AddIngredient(ModContent.Find<ModItem>("CalamityMod", "EssenceofEleum"), 3)
             .AddTile(TileID.Anvils)
                 .Register();
         }

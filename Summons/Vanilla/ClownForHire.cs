@@ -13,8 +13,8 @@ namespace UsefulMod.Summons.Vanilla
         }
         public override void AddRecipes() {  
             CreateRecipe()
-                .AddIngredient(ItemID.SoulofNight, 3)
-                .AddIngredient(ItemID.PlatinumCoin)
+                .AddIngredient(ItemID.SoulofNight)
+                .AddIngredient(ItemID.GoldCoin)
                 .Register();
         }
     }

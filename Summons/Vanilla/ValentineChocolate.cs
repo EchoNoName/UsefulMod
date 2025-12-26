@@ -13,8 +13,7 @@ namespace UsefulMod.Summons.Vanilla
         }
         public override void AddRecipes() {  
             CreateRecipe()
-                .AddIngredient(ItemID.LifeCrystal)
-                .AddRecipeGroup("Fruit", 5)
+                .AddRecipeGroup("Fruit", 10)
                 .AddTile(TileID.CookingPots)
                 .Register();
         }

@@ -44,14 +44,14 @@ namespace UsefulMod.Summons.Vanilla
         public override void AddRecipes() {  
             CreateRecipe()
                 .AddIngredient(ItemID.DemoniteBar, 10)
-                .AddIngredient(ItemID.ShadowScale)
+                .AddIngredient(ItemID.ShadowScale, 3)
                 .AddIngredient(ItemID.DD2ElderCrystal)
                 .AddTile(TileID.DemonAltar)
                 .Register();
             
             CreateRecipe()
                 .AddIngredient(ItemID.CrimtaneBar, 10)
-                .AddIngredient(ItemID.TissueSample)
+                .AddIngredient(ItemID.TissueSample, 3)
                 .AddIngredient(ItemID.DD2ElderCrystal)
                 .AddTile(TileID.DemonAltar)
                 .Register();

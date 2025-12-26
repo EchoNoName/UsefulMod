@@ -16,14 +16,12 @@ namespace UsefulMod.Summons.Vanilla
         public override void AddRecipes() {
 			// Gold version
 			CreateRecipe()
-				.AddIngredient(ItemID.GoldBar, 5)
-				.AddIngredient(ItemID.Diamond)
+				.AddIngredient(ItemID.GoldBar, 3)
 				.AddTile(TileID.Anvils)
 				.Register();
             
             CreateRecipe()
-				.AddIngredient(ItemID.PlatinumBar, 5)
-				.AddIngredient(ItemID.Diamond)
+				.AddIngredient(ItemID.PlatinumBar, 3)
 				.AddTile(TileID.Anvils)
 				.Register();
 		}

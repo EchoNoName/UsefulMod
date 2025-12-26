@@ -14,8 +14,8 @@ namespace UsefulMod.Summons.Vanilla
         public override void AddRecipes() {  
             CreateRecipe()
                 .AddIngredient(ItemID.Silk, 5)
-                .AddIngredient(ItemID.PlatinumCoin, 3)
-                .AddIngredient(ItemID.Ectoplasm, 5)
+                .AddIngredient(ItemID.GoldCoin, 3)
+                .AddIngredient(ItemID.Ectoplasm, 3)
                 .AddTile(TileID.MythrilAnvil)
                 .Register();
         }

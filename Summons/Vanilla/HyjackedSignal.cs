@@ -14,7 +14,7 @@ namespace UsefulMod.Summons.Vanilla
         public override void AddRecipes() {  
             CreateRecipe()
                 .AddIngredient(ItemID.Wire, 50)
-                .AddIngredient(ItemID.BeetleHusk, 5)
+                .AddIngredient(ItemID.BeetleHusk, 3)
                 .AddTile(TileID.MythrilAnvil)
                 .Register();
         }

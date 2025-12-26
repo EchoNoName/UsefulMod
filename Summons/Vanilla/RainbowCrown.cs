@@ -14,15 +14,15 @@ namespace UsefulMod.Summons.Vanilla
         public override void AddRecipes() {  
             CreateRecipe()
                 .AddIngredient(ItemID.GoldBar, 10)
-                .AddIngredient(ItemID.UnicornHorn, 5)
-                .AddIngredient(ItemID.PixieDust, 30)
+                .AddIngredient(ItemID.UnicornHorn, 2)
+                .AddIngredient(ItemID.PixieDust, 10)
                 .AddTile(TileID.Anvils)
                 .Register();
             
             CreateRecipe()
                 .AddIngredient(ItemID.PlatinumBar, 10)
-                .AddIngredient(ItemID.UnicornHorn, 5)
-                .AddIngredient(ItemID.PixieDust, 30)
+                .AddIngredient(ItemID.UnicornHorn, 2)
+                .AddIngredient(ItemID.PixieDust, 10)
                 .AddTile(TileID.Anvils)
                 .Register();
         }

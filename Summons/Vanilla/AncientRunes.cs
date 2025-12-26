@@ -15,7 +15,7 @@ namespace UsefulMod.Summons.Vanilla
         public override void AddRecipes() {
 			// Gold version
 			CreateRecipe()
-				.AddIngredient(ItemID.SoulofNight, 5)
+				.AddIngredient(ItemID.SoulofNight, 3)
                 .AddIngredient(ItemID.Diamond, 3)
 				.AddIngredient(ItemID.RedPaint, 2)
 				.Register();

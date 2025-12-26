@@ -13,7 +13,7 @@ namespace UsefulMod.Summons.Vanilla
         }
         public override void AddRecipes() {  
             CreateRecipe()
-                .AddIngredient(ItemID.StoneBlock, 50)
+                .AddIngredient(ItemID.StoneBlock, 100)
                 .AddTile(TileID.WorkBenches)
                 .Register();
         }

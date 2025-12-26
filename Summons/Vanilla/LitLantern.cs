@@ -15,7 +15,7 @@ namespace UsefulMod.Summons.Vanilla
             CreateRecipe()
                 .AddRecipeGroup("IronBar", 10)
                 .AddIngredient(ItemID.Torch, 5)
-                .AddIngredient(ItemID.SoulofFlight, 5)
+                .AddIngredient(ItemID.SoulofFlight, 3)
                 .AddTile(TileID.Anvils)
                 .Register();
         }

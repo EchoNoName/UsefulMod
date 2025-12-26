@@ -16,7 +16,7 @@ namespace UsefulMod.Summons.Vanilla
 			// Gold version
 			CreateRecipe()
 				.AddIngredient(ItemID.Chest, 1)
-                .AddIngredient(ItemID.SoulofNight, 10)
+                .AddIngredient(ItemID.SoulofNight, 3)
 				.AddTile(TileID.DemonAltar)
 				.Register();
 		}

@@ -9,8 +9,8 @@ namespace UsefulMod.Summons.Vanilla
 
         public override void AddRecipes() {  
             CreateRecipe()
-                .AddIngredient(ItemID.HellstoneBar, 10)
-                .AddIngredient(ItemID.SoulofNight, 5)
+                .AddIngredient(ItemID.HellstoneBar, 5)
+                .AddIngredient(ItemID.SoulofNight, 3)
                 .AddTile(TileID.Anvils)
                 .Register();
         }

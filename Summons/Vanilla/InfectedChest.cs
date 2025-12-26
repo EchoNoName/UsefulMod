@@ -36,10 +36,10 @@ namespace UsefulMod.Summons.Vanilla
 
         public override void AddRecipes() {  
             CreateRecipe()
-                .AddIngredient(ItemID.Chest, 4)
-                .AddIngredient(ItemID.NightKey)
-                .AddIngredient(ItemID.LightKey)
-                .AddIngredient(ItemID.JungleSpores, 15)
+                .AddIngredient(ItemID.Chest)
+                .AddIngredient(ItemID.SoulofLight, 5)
+                .AddIngredient(ItemID.SoulofNight, 5)
+                .AddIngredient(ItemID.JungleSpores, 5)
                 .AddTile(TileID.Anvils)
                 .Register();
         }

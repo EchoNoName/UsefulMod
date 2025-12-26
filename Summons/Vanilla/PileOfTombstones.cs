@@ -9,9 +9,9 @@ namespace UsefulMod.Summons.Vanilla
 
         public override void AddRecipes() {  
             CreateRecipe()
-                .AddIngredient(ItemID.Bone, 20)
+                .AddIngredient(ItemID.Bone, 5)
                 .AddIngredient(ItemID.StoneBlock, 50)
-                .AddIngredient(ItemID.Ectoplasm, 5)
+                .AddIngredient(ItemID.Ectoplasm, 3)
                 .AddTile(TileID.MythrilAnvil)
                 .Register();
         }

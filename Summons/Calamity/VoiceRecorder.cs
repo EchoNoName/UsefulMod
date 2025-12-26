@@ -23,8 +23,8 @@ namespace UsefulMod.Summons.Calamity
         }
         public override void AddRecipes() {  
             CreateRecipe()
-                .AddIngredient(ItemID.Seashell, 10)
-                .AddRecipeGroup("IronBar", 20)
+                .AddIngredient(ItemID.Seashell, 5)
+                .AddRecipeGroup("IronBar", 10)
                 .Register();
         }
     }

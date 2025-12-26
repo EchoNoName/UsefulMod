@@ -9,7 +9,7 @@ namespace UsefulMod.Summons.Vanilla
 
         public override void AddRecipes() {  
             CreateRecipe()
-                .AddIngredient(ItemID.Glowstick, 15)
+                .AddIngredient(ItemID.Glowstick, 10)
                 .Register();
         }
     }

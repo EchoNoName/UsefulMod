@@ -14,7 +14,7 @@ namespace UsefulMod.Summons.Vanilla
         public override void AddRecipes() {  
             CreateRecipe()
                 .AddIngredient(ItemID.RedPaint)
-                .AddIngredient(ItemID.SuspiciousLookingEye)
+                .AddIngredient(ItemID.Lens, 2)
                 .AddTile(TileID.Anvils)
                 .Register();
         }

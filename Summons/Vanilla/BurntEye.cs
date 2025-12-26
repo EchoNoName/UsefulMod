@@ -13,8 +13,8 @@ namespace UsefulMod.Summons.Vanilla
         }
         public override void AddRecipes() {  
             CreateRecipe()
-                .AddIngredient(ItemID.SuspiciousLookingEye)
-                .AddIngredient(ItemID.Hellstone, 20)
+                .AddIngredient(ItemID.Lens, 2)
+                .AddIngredient(ItemID.Hellstone, 5)
                 .AddTile(TileID.Hellforge)
                 .Register();
         }

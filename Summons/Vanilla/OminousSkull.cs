@@ -15,8 +15,8 @@ namespace UsefulMod.Summons.Vanilla
         public override void AddRecipes() {  
             CreateRecipe()
                 .AddIngredient(ItemID.Cobweb, 20)
-                .AddRecipeGroup("IronBar", 10)
-                .AddIngredient(ItemID.Gel, 15)
+                .AddRecipeGroup("IronBar", 5)
+                .AddIngredient(ItemID.Gel, 10)
                 .AddTile(TileID.Anvils)
                 .Register();
         }

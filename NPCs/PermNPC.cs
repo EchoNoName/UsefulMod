@@ -16,6 +16,7 @@ using Terraria.Localization;
 using Terraria.ModLoader;
 using Terraria.ModLoader.IO;
 using Terraria.Utilities;
+using UsefulMod.Configs;
 
 
 namespace UsefulMod.NPCs
@@ -28,7 +29,9 @@ namespace UsefulMod.NPCs
 
 		private static Profiles.StackedNPCProfile NPCProfile;
 
-
+		public override bool IsLoadingEnabled(Mod mod) {
+			return ModContent.GetInstance<UsefulModConfig>().EnableAnomaly;
+		}
 		public override LocalizedText DeathMessage => this.GetLocalization("DeathMessage");
 
 		public override void SetStaticDefaults() {

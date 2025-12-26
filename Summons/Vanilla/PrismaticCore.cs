@@ -15,9 +15,6 @@ namespace UsefulMod.Summons.Vanilla
         public override void AddRecipes() {  
             CreateRecipe()
                 .AddIngredient(ItemID.EmpressButterfly, 1)
-                .AddIngredient(ItemID.UnicornHorn, 5)
-                .AddIngredient(ItemID.PixieDust, 20)
-                .AddTile(TileID.MythrilAnvil)
                 .Register();
         }
     }

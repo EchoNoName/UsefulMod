@@ -17,7 +17,7 @@ namespace UsefulMod.Summons.Calamity
         }
         public override void AddRecipes() {  
             CreateRecipe()
-            .AddIngredient(ItemID.HoneyBlock, 40)
+            .AddIngredient(ItemID.HoneyBlock, 20)
             .AddIngredient(ModContent.Find<ModItem>("CalamityMod", "PlagueCellCanister"), 10)
             .AddTile(TileID.DemonAltar)
                 .Register();

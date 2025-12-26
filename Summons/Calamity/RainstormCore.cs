@@ -15,7 +15,7 @@ namespace UsefulMod.Summons.Calamity
             CreateRecipe()
             .AddIngredient(ItemID.Cloud, 100)
             .AddIngredient(ItemID.RainCloud, 20)
-            .AddIngredient(ItemID.SoulofLight, 10)
+            .AddIngredient(ItemID.SoulofLight, 5)
             .AddTile(TileID.Anvils)
                 .Register();
         }

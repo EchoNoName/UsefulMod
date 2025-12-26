@@ -18,7 +18,7 @@ namespace UsefulMod.Summons.Calamity
         public override void AddRecipes() {  
             CreateRecipe()
             .AddIngredient(ItemID.StoneBlock, 100)
-            .AddIngredient(ItemID.SoulofLight, 10)
+            .AddIngredient(ItemID.SoulofLight, 5)
             .AddTile(TileID.Anvils)
                 .Register();
         }

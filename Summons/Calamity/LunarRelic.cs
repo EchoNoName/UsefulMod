@@ -23,8 +23,8 @@ namespace UsefulMod.Summons.Calamity
         }
         public override void AddRecipes() {  
             CreateRecipe()
-            .AddIngredient(ModContent.Find<ModItem>("CalamityMod", "AstralMonolith"), 10)
-            .AddIngredient(ItemID.SoulofNight, 10)
+            .AddIngredient(ModContent.Find<ModItem>("CalamityMod", "AstralMonolith"), 25)
+            .AddIngredient(ItemID.SoulofNight, 15)
             .AddTile(TileID.Anvils)
                 .Register();
         }

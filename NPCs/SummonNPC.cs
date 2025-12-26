@@ -18,6 +18,7 @@ using Terraria.ModLoader.IO;
 using Terraria.Utilities;
 using UsefulMod.Summons.Vanilla;
 using UsefulMod.Summons.Calamity;
+using UsefulMod.Configs;
 
 
 namespace UsefulMod.NPCs
@@ -30,7 +31,9 @@ namespace UsefulMod.NPCs
 
 		private static Profiles.StackedNPCProfile NPCProfile;
 
-
+		public override bool IsLoadingEnabled(Mod mod) {
+			return ModContent.GetInstance<UsefulModConfig>().EnableCollector;
+		}
 		public override LocalizedText DeathMessage => this.GetLocalization("DeathMessage");
 
 		public override void SetStaticDefaults() {

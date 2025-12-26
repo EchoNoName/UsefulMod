@@ -13,7 +13,7 @@ namespace UsefulMod.Summons.Vanilla
         }
         public override void AddRecipes() {  
             CreateRecipe()
-                .AddIngredient(ItemID.Book, 20)
+                .AddIngredient(ItemID.Book, 10)
                 .AddTile(TileID.DemonAltar)
                 .Register();
         }

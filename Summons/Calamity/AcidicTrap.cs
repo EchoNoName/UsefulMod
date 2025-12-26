@@ -14,15 +14,16 @@ namespace UsefulMod.Summons.Calamity
         public override bool CanUseItem(Player player)
         {
             bool inSulphurSea = false;
+            bool scourgeDowned = false;
             if (ModLoader.TryGetMod("CalamityMod", out Mod calamity)) {
                 inSulphurSea = (bool)calamity.Call("GetInZone", player, "sulfur");
+                scourgeDowned = (bool)calamity.Call("GetBossDowned", "aquaticscourge");
             }
-            return inSulphurSea;
+            return inSulphurSea && scourgeDowned;
         }
         public override void AddRecipes() {  
             CreateRecipe()
                 .AddIngredient(ModContent.Find<ModItem>("CalamityMod", "Acidwood"), 20)
-                .AddIngredient(ModContent.Find<ModItem>("CalamityMod", "BleachedAnglingKit"))
                 .AddTile(TileID.Anvils)
                 .Register();
         }

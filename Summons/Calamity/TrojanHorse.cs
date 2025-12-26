@@ -14,7 +14,7 @@ namespace UsefulMod.Summons.Calamity
 
         public override void AddRecipes() {  
             CreateRecipe()
-            .AddIngredient(ItemID.Wood, 100)
+            .AddIngredient(ItemID.Wood, 50)
             .AddIngredient(ItemID.WaterBucket)
             .AddTile(TileID.Anvils)
                 .Register();

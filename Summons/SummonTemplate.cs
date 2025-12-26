@@ -11,6 +11,7 @@ using System.Security.Cryptography.X509Certificates;
 using System;
 using System.Linq;
 using Microsoft.Build.Evaluation;
+using UsefulMod.Configs;
 
 namespace UsefulMod.Summons
 {
@@ -30,13 +31,13 @@ namespace UsefulMod.Summons
             ItemID.Sets.SortingPriorityBossSpawns[Type] = 0;
 
         }
-
+        
 		public override void SetDefaults() {
 			Item.rare = ItemRarityID.LightRed;
             Item.useAnimation = 30;
             Item.useTime = 30;
             Item.useStyle = ItemUseStyleID.HoldUp;
-            Item.consumable = false;
+            Item.consumable = ModContent.GetInstance<UsefulModConfig>().NonConsSummons;
 		}
 		
 		public override bool? UseItem(Player player) {

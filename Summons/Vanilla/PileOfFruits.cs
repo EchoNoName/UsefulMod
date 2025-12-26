@@ -13,7 +13,7 @@ namespace UsefulMod.Summons.Vanilla
         }
         public override void AddRecipes() {  
             CreateRecipe()
-                .AddRecipeGroup("Fruit", 30)
+                .AddRecipeGroup("Fruit", 10)
                 .Register();
         }
     }

@@ -14,7 +14,7 @@ namespace UsefulMod.Summons.Vanilla
         public override void AddRecipes() {  
             CreateRecipe()
                 .AddRecipeGroup("Wood", 50)
-                .AddIngredient(ItemID.SoulofLight, 5)
+                .AddIngredient(ItemID.SoulofLight, 3)
                 .AddTile(TileID.WorkBenches)
                 .Register();
         }

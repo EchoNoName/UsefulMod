@@ -13,13 +13,13 @@ namespace UsefulMod.Summons.Vanilla
         }
         public override void AddRecipes() {  
             CreateRecipe()
-                .AddIngredient(ItemID.GoldBar, 10)
+                .AddIngredient(ItemID.GoldBar, 15)
                 .AddIngredient(ItemID.Gel, 20)
                 .AddTile(TileID.Anvils)
                 .Register();
 
             CreateRecipe()
-                .AddIngredient(ItemID.PlatinumBar, 10)
+                .AddIngredient(ItemID.PlatinumBar, 15)
                 .AddIngredient(ItemID.Gel, 20)
                 .AddTile(TileID.Anvils)
                 .Register();

@@ -15,20 +15,20 @@ namespace UsefulMod.Summons.Vanilla
         public override void AddRecipes() { 
             if (ModLoader.TryGetMod("FargowiltasSouls", out Mod fargoSouls)) {
                 CreateRecipe()
-                    .AddIngredient(ItemID.IceBlock, 100)
-                    .AddIngredient(ItemID.GoldBar, 10)
+                    .AddIngredient(ItemID.IceBlock, 25)
+                    .AddIngredient(ItemID.GoldBar, 5)
                     .AddTile(TileID.Anvils)
                     .Register();
 
                 CreateRecipe()
-                    .AddIngredient(ItemID.IceBlock, 100)
-                    .AddIngredient(ItemID.PlatinumBar, 10)
+                    .AddIngredient(ItemID.IceBlock, 25)
+                    .AddIngredient(ItemID.PlatinumBar, 5)
                     .AddTile(TileID.Anvils)
                     .Register();
             } else {
                 CreateRecipe()
-                    .AddIngredient(ItemID.IceBlock, 100)
-                    .AddIngredient(ItemID.SoulofNight, 10)
+                    .AddIngredient(ItemID.IceBlock, 25)
+                    .AddIngredient(ItemID.SoulofNight, 3)
                     .AddTile(TileID.Anvils)
                     .Register();
             }

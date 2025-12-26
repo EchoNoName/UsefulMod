@@ -87,7 +87,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Pinky.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -97,7 +97,7 @@ Items: {
 			'''
 			Summons a Undead Miner.
 			Can only be used at Night or Underground.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -107,7 +107,7 @@ Items: {
 			'''
 			Summons Tim.
 			Can only be used at Night or Underground.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -117,7 +117,7 @@ Items: {
 			'''
 			Summons Doctor Bones.
 			Can only be used at Night or Underground.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -127,7 +127,7 @@ Items: {
 			'''
 			Summons The Bride.
 			Can only be used at Night or Underground.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -137,7 +137,7 @@ Items: {
 			'''
 			Summons a Voodoo Demon.
 			Can only be used in Hell.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -149,7 +149,7 @@ Items: {
 			Jungle: Lac Beetle
 			Other: Cochineal Beetle
 			Can only be used Underground.
-			Non-Consumable
+			
 			'''
 		DisplayName: Pile of Fruits
 	}
@@ -158,7 +158,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Moth.
-			Non-Consumable
+			
 			'''
 		DisplayName: Lit Lantern
 	}
@@ -167,7 +167,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Squid.
-			Non-Consumable
+			
 			'''
 		DisplayName: Fake Jellyfish
 	}
@@ -176,7 +176,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Goblin Scout.
-			Non-Consumable
+			
 			'''
 		DisplayName: Declaration of War
 	}
@@ -186,7 +186,7 @@ Items: {
 			'''
 			Summons a Clown.
 			Can only be used at Night.
-			Non-Consumable
+			
 			'''
 		DisplayName: Clown For Hire
 	}
@@ -195,7 +195,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Sea Snail.
-			Non-Consumable
+			
 			'''
 		DisplayName: Algae
 	}
@@ -206,7 +206,7 @@ Items: {
 			'''
 			Summons a Mimic.
 			Summons a Ice Mimic when used on the Ice Biome
-			Non-Consumable
+			
 			'''
 	}
 
@@ -215,7 +215,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Pirate Captain.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -226,7 +226,7 @@ Items: {
 			Summons a Lost Girl.
 			Summons a Nymph in Hardmode.
 			Can only be used at Night or Underground.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -235,7 +235,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Tactical Skeleton.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -245,7 +245,7 @@ Items: {
 			'''
 			Summons a Blood Eel.
 			Can only be used at Night.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -255,7 +255,7 @@ Items: {
 			'''
 			Summons a Wandering Eye.
 			Can only be used at Night.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -265,7 +265,7 @@ Items: {
 			'''
 			Summons Dreadnautilus.
 			Can only be used at Night.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -275,7 +275,7 @@ Items: {
 			'''
 			Summons a Zombie Merman.
 			Can only be used at Night.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -285,7 +285,7 @@ Items: {
 			'''
 			Summons a Hemogoblin Shark.
 			Can only be used at Night.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -295,7 +295,7 @@ Items: {
 			'''
 			Summons the Skeleton Merchant.
 			Can only be used Underground.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -304,7 +304,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Skeleton Commando.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -314,7 +314,7 @@ Items: {
 			'''
 			Summons a Eyezor.
 			Can only be used in the Day.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -324,7 +324,7 @@ Items: {
 			'''
 			Summons the Clumsy Balloon Slime.
 			Can only be used in Space.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -333,7 +333,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons the Goblin Warlock.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -343,7 +343,7 @@ Items: {
 			'''
 			Summons the Tortured Soul.
 			Can only be used in Hell.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -353,7 +353,7 @@ Items: {
 			'''
 			Summons the Medusa.
 			Can only be used at Night or Underground.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -362,7 +362,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Skeleton Sniper.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -371,7 +371,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Paladin.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -381,7 +381,7 @@ Items: {
 			'''
 			Summons a Martian Probe.
 			Can only be used in Space.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -398,7 +398,7 @@ Items: {
 			In a Zenith/Celebrationmk10 World:
 			Jungle: Jungle Mimic
 			Can only be used in a valid Biome.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -408,7 +408,7 @@ Items: {
 			'''
 			Summons The Groom.
 			Can only be used at Night.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -417,7 +417,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Mystic Frog.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -426,7 +426,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons Bone Lee.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -436,7 +436,7 @@ Items: {
 			'''
 			Summons a Ice Golem.
 			Can only be used in the Ice Biome.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -446,7 +446,7 @@ Items: {
 			'''
 			Summons Mothron.
 			Can only be used in an Eclipse.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -456,7 +456,7 @@ Items: {
 			'''
 			Summons a Sand Elemental.
 			Can only be used in the Dessert Biome.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -465,7 +465,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Gnome.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -474,7 +474,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons the Old Shaking Chest.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -483,7 +483,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Rainbow Slime.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -492,7 +492,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons the Golden Slime.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -501,7 +501,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons The Dutchman.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -511,7 +511,7 @@ Items: {
 			'''
 			Summons Skeletron at Night.
 			Summons the Dungeon Guardian in the Day.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -520,7 +520,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons The Empress of Light.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -529,7 +529,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons Duke Fishron.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -538,7 +538,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Cloud Elemental.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -547,7 +547,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Diabolist.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -556,7 +556,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Necromancer.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -565,7 +565,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Ragged Caster.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -575,7 +575,7 @@ Items: {
 			'''
 			Summons Anahita.
 			Can only be used in the clean Ocean.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -584,7 +584,7 @@ Items: {
 			'''
 			Summons the Giant Clam.
 			Can only be used in the Sunken Sea.
-			Non-Consumable
+			
 			'''
 		DisplayName: Suspicious Clam
 	}
@@ -595,7 +595,7 @@ Items: {
 			Summons the Hivemind when used in the Corruption.
 			Summons the Perforator when used in the Crimson.
 			Can only be used in a Evil Biome.
-			Non-Consumable
+			
 			'''
 		DisplayName: Rotten Nerves
 	}
@@ -605,7 +605,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Cnidrion.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -614,7 +614,7 @@ Items: {
 			'''
 			Summons a Overloaded Soldier.
 			Can only be used Underground.
-			Non-Consumable
+			
 			'''
 		DisplayName: Chaotic Energy
 	}
@@ -623,8 +623,8 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Cragmaw Mire.
-			Can only be used in the Sulphuric Sea.
-			Non-Consumable
+			Can only be used in the Sulphuric Sea after Aquatic Scourge has been defeated.
+			
 			'''
 		DisplayName: Acidic Trap
 	}
@@ -635,7 +635,7 @@ Items: {
 			'''
 			Summons the Colossal Squid.
 			Can only be used in the 3rd layer of the Abyss or lower.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -645,7 +645,7 @@ Items: {
 			'''
 			Summons the Ice Clasper.
 			Can only be used in the Ice Biome.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -655,7 +655,7 @@ Items: {
 			'''
 			Summons the Atlas.
 			Can only be used in the Astral Infection.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -665,7 +665,7 @@ Items: {
 			'''
 			Summons the Eidolist.
 			Can only be used in the 3rd layer of the Abyss or lower.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -675,7 +675,7 @@ Items: {
 			'''
 			Summons the Nuclear Terror.
 			Can only be used in the Sulphuric Sea.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -685,7 +685,7 @@ Items: {
 			'''
 			Summons a Mauler.
 			Can only be used in the Sulphuric Sea.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -695,7 +695,7 @@ Items: {
 			'''
 			Summons a Earth Elemental.
 			Can only be used in Underground.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -705,7 +705,7 @@ Items: {
 			'''
 			Summons a Reaver Shark.
 			Can only be used in the 4th layer of the Abyss.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -715,7 +715,7 @@ Items: {
 			'''
 			Summons a Plaguebringer.
 			Can only be used in the Jungle Biome.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -724,7 +724,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Martian Saucer.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -734,7 +734,7 @@ Items: {
 			'''
 			Summons The Old Duke.
 			Can only be used in the Sulphuric Sea.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -743,7 +743,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons Betsy.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -752,7 +752,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons an Ogre.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -761,7 +761,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons Dark Mage.
-			Non-Consumable
+			
 			'''
 	}
 
@@ -769,7 +769,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Dungeon Slime.
-			Non-Consumable
+			
 			'''
 		DisplayName: Slimy Key
 	}
@@ -780,7 +780,33 @@ Items: {
 			'''
 			Summons the Rune Wizard.
 			Can only be used Underground.
-			Non-Consumable
+			
 			'''
+	}
+}
+
+Configs: {
+	UsefulModConfig: {
+		EnableAnomaly: {
+			Tooltip: "Set this to Off if you don't want the Anomaly NPC"
+			Label: Enable Anomaly
+		}
+
+		EnableCollector: {
+			Tooltip: "Set this to Off if you don't want the Collector NPC"
+			Label: Enable Collector
+		}
+
+		Headers: {
+			NPCs: NPCs Toggles
+			Items: Item Configs
+		}
+
+		DisplayName: Lazymans Mod Configs
+
+		NonConsSummons: {
+			Tooltip: "Disable to make all summon items Non-Consumable. NOTE: Recipes are balanced around this being on"
+			Label: Consumed Summons
+		}
 	}
 }

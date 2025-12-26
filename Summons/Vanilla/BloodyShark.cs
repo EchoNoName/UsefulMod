@@ -14,7 +14,7 @@ namespace UsefulMod.Summons.Vanilla
         public override void AddRecipes() {  
             CreateRecipe()
                 .AddIngredient(ItemID.RedPaint)
-                .AddIngredient(ItemID.SharkFin, 3)
+                .AddIngredient(ItemID.SharkFin, 2)
                 .AddIngredient(ItemID.SoulofNight, 3)
                 .AddTile(TileID.Anvils)
                 .Register();

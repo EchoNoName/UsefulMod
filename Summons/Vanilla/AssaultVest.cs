@@ -16,7 +16,7 @@ namespace UsefulMod.Summons.Vanilla
             CreateRecipe()
                 .AddIngredient(ItemID.Silk, 20)
                 .AddIngredient(ItemID.ClayBlock, 10)
-                .AddIngredient(ItemID.Ectoplasm, 5)
+                .AddIngredient(ItemID.Ectoplasm, 3)
                 .AddTile(TileID.MythrilAnvil)
                 .Register();
         }

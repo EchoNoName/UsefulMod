@@ -21,7 +21,7 @@ namespace UsefulMod.Summons.Calamity
         }
         public override void AddRecipes() {  
             CreateRecipe()
-            .AddIngredient(ModContent.Find<ModItem>("CalamityMod", "BloodOrb"), 75)
+            .AddIngredient(ModContent.Find<ModItem>("CalamityMod", "BloodOrb"), 50)
             .AddIngredient(ItemID.Glass, 20)
             .AddIngredient(ItemID.LunarBar, 10)
                 .Register();

@@ -17,7 +17,7 @@ namespace UsefulMod.Summons.Vanilla
             CreateRecipe()
                 .AddIngredient(ItemID.Wire, 50)
                 .AddRecipeGroup("IronBar", 20)
-                .AddIngredient(ItemID.BeetleHusk, 5)
+                .AddIngredient(ItemID.BeetleHusk, 3)
                 .AddTile(TileID.MythrilAnvil)
                 .Register();
         }

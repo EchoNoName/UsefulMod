@@ -17,7 +17,7 @@ namespace UsefulMod.Summons.Vanilla
         public override void AddRecipes() {
 			// Gold version
 			CreateRecipe()
-				.AddIngredient(ItemID.FossilOre, 15)
+				.AddIngredient(ItemID.FossilOre, 8)
 				.AddTile(TileID.WorkBenches)
 				.Register();
 		}

@@ -13,8 +13,8 @@ namespace UsefulMod.Summons.Vanilla
         }
         public override void AddRecipes() {  
             CreateRecipe()
-                .AddIngredient(ItemID.SoulofNight, 3)
-                .AddIngredient(ItemID.SoulofLight, 3)
+                .AddIngredient(ItemID.SoulofNight, 2)
+                .AddIngredient(ItemID.SoulofLight, 2)
                 .AddTile(TileID.DemonAltar)
                 .Register();
         }
