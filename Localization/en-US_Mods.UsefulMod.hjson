@@ -18,6 +18,7 @@ NPCs: {
 		}
 
 		DisplayName: Collector
+		Census.SpawnCondition: No Conditions
 		DeathMessage: The Collector got collected.
 	}
 
