@@ -8,6 +8,7 @@ namespace UsefulMod.Summons.Vanilla
     {
         public override int SummonedNPCType => NPCID.DukeFishron;
 
+        public override int ItemCost => Item.buyPrice(gold: 25);
         public override bool CanUseItem(Player player) => !NPC.AnyNPCs(NPCID.DukeFishron) && player.ZoneBeach;
         public override void AddRecipes() {  
             CreateRecipe()

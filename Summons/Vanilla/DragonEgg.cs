@@ -6,7 +6,8 @@ namespace UsefulMod.Summons.Vanilla
     public class DragonEgg : SummonTemplate
     {
         public override int SummonedNPCType => NPCID.DD2Betsy;
-
+        
+        public override int ItemCost => Item.buyPrice(gold: 50);
         public override void AddRecipes() {  
             CreateRecipe()
                 .AddIngredient(ItemID.BeetleHusk, 10)

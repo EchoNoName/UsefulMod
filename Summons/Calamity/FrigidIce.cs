@@ -10,6 +10,7 @@ namespace UsefulMod.Summons.Calamity
     {
         public override bool IsLoadingEnabled(Mod mod) => ModLoader.HasMod("CalamityMod");
         public override int SummonedNPCType => ModContent.Find<ModNPC>("CalamityMod", "IceClasper").Type;
+        public override int ItemCost => Item.buyPrice(silver: 75);
 
         public override bool CanUseItem(Player player)
         {

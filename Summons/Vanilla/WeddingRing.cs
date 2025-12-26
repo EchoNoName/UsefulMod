@@ -8,7 +8,7 @@ namespace UsefulMod.Summons.Vanilla
 	{
 
         public override int SummonedNPCType => NPCID.TheBride;
-		
+		public override int ItemCost => Item.buyPrice(silver: 60);
         public override bool CanUseItem(Player player)
         {
             return !Main.dayTime|| player.ZoneDirtLayerHeight || player.ZoneRockLayerHeight || player.ZoneUnderworldHeight;

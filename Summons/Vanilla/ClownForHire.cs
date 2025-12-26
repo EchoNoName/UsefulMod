@@ -6,7 +6,7 @@ namespace UsefulMod.Summons.Vanilla
     public class ClownForHire : SummonTemplate
     {
         public override int SummonedNPCType => NPCID.Clown;
-
+        public override int ItemCost => Item.buyPrice(gold: 2, silver: 90);
         public override bool CanUseItem(Player player)
         {
             return !Main.dayTime;

@@ -7,8 +7,7 @@ namespace UsefulMod.Summons.Vanilla
     public class MartianCommunicationDevice : SummonTemplate
     {
         public override int SummonedNPCType => NPCID.MartianSaucerCore;
-
-
+        public override int ItemCost => Item.buyPrice(gold: 42);
         public override bool CanUseItem(Player player)
         {
             return true;

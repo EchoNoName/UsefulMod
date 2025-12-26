@@ -6,7 +6,7 @@ namespace UsefulMod.Summons.Vanilla
     public class InfernalRitual : SummonTemplate
     {
         public override int SummonedNPCType => NPCID.DiabolistWhite;
-
+        public override int ItemCost => Item.buyPrice(silver: 40);
         public override void AddRecipes() {  
             CreateRecipe()
                 .AddIngredient(ItemID.HellstoneBar, 8)

@@ -6,7 +6,7 @@ namespace UsefulMod.Summons.Vanilla
     public class VeryGoldCrown : SummonTemplate
     {
         public override int SummonedNPCType => NPCID.GoldenSlime;
-
+        public override int ItemCost => Item.buyPrice(gold: 27, silver: 50);
         public override bool CanUseItem(Player player)
         {
             return true;

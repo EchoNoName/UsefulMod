@@ -6,7 +6,7 @@ namespace UsefulMod.Summons.Vanilla
     public class MastersBelt : SummonTemplate
     {
         public override int SummonedNPCType => NPCID.BoneLee;
-
+        public override int ItemCost => Item.buyPrice(silver: 75);
         public override bool CanUseItem(Player player)
         {
             return true;

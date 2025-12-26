@@ -7,8 +7,7 @@ namespace UsefulMod.Summons.Vanilla
     public class SandstormCore : SummonTemplate
     {
         public override int SummonedNPCType => NPCID.SandElemental;
-
-
+        public override int ItemCost => Item.buyPrice(gold: 4);
         public override bool CanUseItem(Player player)
         {
             return player.ZoneDesert;

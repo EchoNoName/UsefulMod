@@ -6,7 +6,8 @@ namespace UsefulMod.Summons.Vanilla
 {
     public class InfectedChest : SummonTemplate
     {
-
+        
+        public override int ItemCost => Item.buyPrice(gold: 12, silver: 45);
         private bool SpecialJungleAllowed() {
             // Celebration / GetFixedBoi worlds
             if (Main.getGoodWorld || Main.zenithWorld)

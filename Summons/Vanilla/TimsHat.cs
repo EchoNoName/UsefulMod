@@ -7,7 +7,7 @@ namespace UsefulMod.Summons.Vanilla
 	public class TimsHat : SummonTemplate
     {
         public override int SummonedNPCType => NPCID.Tim;
-		
+		public override int ItemCost => Item.buyPrice(gold: 1, silver: 10);
         public override bool CanUseItem(Player player)
         {
             return !Main.dayTime|| player.ZoneDirtLayerHeight || player.ZoneRockLayerHeight || player.ZoneUnderworldHeight;

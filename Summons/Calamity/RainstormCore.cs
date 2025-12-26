@@ -11,6 +11,7 @@ namespace UsefulMod.Summons.Calamity
         public override bool IsLoadingEnabled(Mod mod) => ModLoader.HasMod("CalamityMod");
         public override int SummonedNPCType => ModContent.Find<ModNPC>("CalamityMod", "ThiccWaifu").Type;
 
+        public override int ItemCost => Item.buyPrice(gold: 12, silver: 50);
         public override void AddRecipes() {  
             CreateRecipe()
             .AddIngredient(ItemID.Cloud, 100)

@@ -6,7 +6,7 @@ namespace UsefulMod.Summons.Vanilla
     public class LitLantern : SummonTemplate
     {
         public override int SummonedNPCType => NPCID.Moth;
-
+        public override int ItemCost => Item.buyPrice(gold: 2);
         public override bool CanUseItem(Player player)
         {
             return true;

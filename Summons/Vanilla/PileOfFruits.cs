@@ -6,7 +6,7 @@ namespace UsefulMod.Summons.Vanilla
     public class PileOfFruits : SummonTemplate
     {
         public override int SummonedNPCType => Main.LocalPlayer.ZoneSnow ? NPCID.CyanBeetle : Main.LocalPlayer.ZoneJungle ? NPCID.LacBeetle : NPCID.CochinealBeetle;
-
+        public override int ItemCost => Item.buyPrice(silver: 13, copper: 75);
         public override bool CanUseItem(Player player)
         {
             return player.ZoneDirtLayerHeight || player.ZoneRockLayerHeight || player.ZoneUnderworldHeight;

@@ -6,7 +6,7 @@ namespace UsefulMod.Summons.Vanilla
     public class SlimyChest : SummonTemplate
     {
         public override int SummonedNPCType => NPCID.BoundTownSlimeOld;
-
+        public override int ItemCost => Item.buyPrice(gold: 5);
         public override bool CanUseItem(Player player)
         {
             return true;

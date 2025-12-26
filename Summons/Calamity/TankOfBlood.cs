@@ -11,6 +11,7 @@ namespace UsefulMod.Summons.Calamity
         public override bool IsLoadingEnabled(Mod mod) => ModLoader.HasMod("CalamityMod");
         public override int SummonedNPCType => ModContent.Find<ModNPC>("CalamityMod", "ReaperShark").Type;
 
+        public override int ItemCost => Item.buyPrice(gold: 50);
         public override bool CanUseItem(Player player)
         {
             bool inAbyss4th = false;

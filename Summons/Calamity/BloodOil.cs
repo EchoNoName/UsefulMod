@@ -11,6 +11,7 @@ namespace UsefulMod.Summons.Calamity
         public override bool IsLoadingEnabled(Mod mod) => ModLoader.HasMod("CalamityMod");
         public override int SummonedNPCType => ModContent.Find<ModNPC>("CalamityMod", "OldDuke").Type;
 
+        public override int ItemCost => Item.buyPrice(platinum: 2);
         public override bool IsBoss => true;
 
         public override bool CanUseItem(Player player)

@@ -7,6 +7,7 @@ namespace UsefulMod.Summons.Vanilla
     {
         public override int SummonedNPCType => NPCID.Squid;
 
+        public override int ItemCost => Item.buyPrice(silver: 10);
         public override void AddRecipes() {  
             CreateRecipe()
                 .AddIngredient(ItemID.Glowstick, 10)

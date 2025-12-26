@@ -6,6 +6,7 @@ namespace UsefulMod.Summons.Vanilla
     public class AssaultVest : SummonTemplate
     {
         public override int SummonedNPCType => NPCID.TacticalSkeleton;
+        public override int ItemCost => Item.buyPrice(silver: 30);
 
         public override bool CanUseItem(Player player)
         {

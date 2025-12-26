@@ -6,7 +6,7 @@ namespace UsefulMod.Summons.Vanilla
     public class BloodyScale : SummonTemplate
     {
         public override int SummonedNPCType => NPCID.ZombieMerman;
-
+        public override int ItemCost => Item.buyPrice(silver: 3);
         public override bool CanUseItem(Player player)
         {
             return !Main.dayTime;

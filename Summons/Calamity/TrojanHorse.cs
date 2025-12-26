@@ -12,6 +12,8 @@ namespace UsefulMod.Summons.Calamity
         public override bool IsLoadingEnabled(Mod mod) => ModLoader.HasMod("CalamityMod");
         public override int SummonedNPCType => ModContent.Find<ModNPC>("CalamityMod", "Cnidrion").Type;
 
+        public override int ItemCost => Item.buyPrice(silver: 50);
+
         public override void AddRecipes() {  
             CreateRecipe()
             .AddIngredient(ItemID.Wood, 50)

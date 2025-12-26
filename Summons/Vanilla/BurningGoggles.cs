@@ -6,7 +6,7 @@ namespace UsefulMod.Summons.Vanilla
     public class BurningGoggles : SummonTemplate
     {
         public override int SummonedNPCType => NPCID.SkeletonCommando;
-
+        public override int ItemCost => Item.buyPrice(silver: 75);
         public override bool CanUseItem(Player player)
         {
             return true;

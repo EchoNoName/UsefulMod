@@ -6,7 +6,7 @@ namespace UsefulMod.Summons.Vanilla
     public class HyjackedSignal : SummonTemplate
     {
         public override int SummonedNPCType => NPCID.MartianProbe;
-
+        public override int ItemCost => Item.buyPrice(silver: 42);
         public override bool CanUseItem(Player player)
         {
             return player.ZoneSkyHeight;

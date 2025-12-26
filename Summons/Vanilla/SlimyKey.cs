@@ -6,7 +6,7 @@ namespace UsefulMod.Summons.Vanilla
     public class SlimyKey : SummonTemplate
     {
         public override int SummonedNPCType => NPCID.DungeonSlime;
-
+        public override int ItemCost => Item.buyPrice(silver: 50);
         public override bool CanUseItem(Player player)
         {
             return true;

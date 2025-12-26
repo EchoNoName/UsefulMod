@@ -13,6 +13,7 @@ namespace UsefulMod.Summons.Calamity
         public override bool IsLoadingEnabled(Mod mod) => ModLoader.HasMod("CalamityMod");
         public override int SummonedNPCType => Main.LocalPlayer.ZoneCorrupt ? ModContent.Find<ModNPC>("CalamityMod", "HiveMind").Type : ModContent.Find<ModNPC>("CalamityMod", "PerforatorHive").Type;
         
+        public override int ItemCost => Item.buyPrice(gold: 17, silver: 50);
         public override bool IsBoss => true;
 
         public override bool CanUseItem(Player player)

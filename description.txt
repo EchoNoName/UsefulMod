@@ -1,9 +1,9 @@
 This mod currently adds 2 NPCs and summon items for most rare enemy in the game and certain event enemies (If it can be detected by the Lifeform Analyzer, it probably has an item).
 This mod also supports Fargos and Calamity with additional items added for Calamity rare enemies.
 
-NPCs:
-    - P: Sells Permenant upgrade items such as Life Crystals (Includes Calamity Health and Mana upgrades when Calamity is enabled)
-    - Q: Sells summon items for rare enemies (All summons has a recipe)
+NPCs (Can be disabled in mod configs):
+- Anomaly: Sells Permenant upgrade items such as Life Crystals (Includes Calamity Health and Mana upgrades when Calamity is enabled)
+- Collector: Sells summon items for rare enemies (All summons has a recipe)
 
 This mod also adds some QOL recipies for Skeletron, Duke Fishron, Empress of Light and the Old Duke summons.
 

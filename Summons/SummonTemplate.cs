@@ -24,6 +24,7 @@ namespace UsefulMod.Summons
         /// </summary>
         public abstract int SummonedNPCType { get; }
 
+        public abstract int ItemCost { get; }
         public virtual bool IsBoss { get; } = false;
 
         public override void SetStaticDefaults() {
@@ -38,6 +39,7 @@ namespace UsefulMod.Summons
             Item.useTime = 30;
             Item.useStyle = ItemUseStyleID.HoldUp;
             Item.consumable = ModContent.GetInstance<UsefulModConfig>().NonConsSummons;
+            Item.value = ItemCost;
 		}
 		
 		public override bool? UseItem(Player player) {

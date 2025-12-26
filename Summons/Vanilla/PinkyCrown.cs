@@ -7,7 +7,7 @@ namespace UsefulMod.Summons.Vanilla
 	public class PinkyCrown : SummonTemplate
 	{
         public override int SummonedNPCType => NPCID.Pinky;
-
+		public override int ItemCost => Item.buyPrice(gold: 2, silver: 85);
         public override bool CanUseItem(Player player)
         {
             return true;

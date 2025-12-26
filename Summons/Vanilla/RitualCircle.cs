@@ -17,7 +17,7 @@ namespace UsefulMod.Summons.Vanilla
     public class RitualCircle : SummonTemplate
     {
         public override int SummonedNPCType => NPC.downedGolemBoss ? NPCID.DD2DarkMageT3: NPCID.DD2DarkMageT1;
-
+        public override int ItemCost => Item.buyPrice(gold: 1);
         public override bool? UseItem(Player player) {
 
             float x_spawn_cord = player.position.X + (Main.rand.NextBool() ? Main.rand.Next(-800, -301) : Main.rand.Next(300, 801));

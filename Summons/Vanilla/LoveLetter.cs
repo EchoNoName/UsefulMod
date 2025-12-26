@@ -6,7 +6,7 @@ namespace UsefulMod.Summons.Vanilla
     public class LoveLetter : SummonTemplate
     {
         public override int SummonedNPCType => NPCID.TheGroom;
-
+        public override int ItemCost => Item.buyPrice(silver: 50);
         public override bool CanUseItem(Player player)
         {
             return !Main.dayTime;

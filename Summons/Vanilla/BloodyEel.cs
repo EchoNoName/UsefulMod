@@ -6,6 +6,7 @@ namespace UsefulMod.Summons.Vanilla
     public class BloodyEel : SummonTemplate
     {
         public override int SummonedNPCType => NPCID.BloodEelHead;
+        public override int ItemCost => Item.buyPrice(gold: 1);
 
         public override bool CanUseItem(Player player)
         {

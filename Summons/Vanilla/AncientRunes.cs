@@ -7,7 +7,7 @@ namespace UsefulMod.Summons.Vanilla
 	public class AncientRunes : SummonTemplate
     {
         public override int SummonedNPCType => NPCID.RuneWizard;
-		
+		public override int ItemCost => Item.buyPrice(gold: 4);
         public override bool CanUseItem(Player player)
         {
             return !Main.dayTime|| player.ZoneDirtLayerHeight || player.ZoneRockLayerHeight || player.ZoneUnderworldHeight;

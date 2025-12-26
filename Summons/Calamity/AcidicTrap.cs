@@ -9,6 +9,8 @@ namespace UsefulMod.Summons.Calamity
     public class AcidicTrap : SummonTemplate
     {
         public override bool IsLoadingEnabled(Mod mod) => ModLoader.HasMod("CalamityMod");
+
+        public override int ItemCost => Item.buyPrice(silver: 75);
         public override int SummonedNPCType => ModContent.Find<ModNPC>("CalamityMod", "CragmawMire").Type;
 
         public override bool CanUseItem(Player player)

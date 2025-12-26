@@ -6,7 +6,7 @@ namespace UsefulMod.Summons.Vanilla
     public class HolyShield : SummonTemplate
     {
         public override int SummonedNPCType => NPCID.Paladin;
-
+        public override int ItemCost => Item.buyPrice(gold: 12, silver: 80);
         public override bool CanUseItem(Player player)
         {
             return true;

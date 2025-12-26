@@ -6,7 +6,7 @@ namespace UsefulMod.Summons.Vanilla
     public class PlunderedGoods : SummonTemplate
     {
         public override int SummonedNPCType => NPCID.PirateShip;
-
+        public override int ItemCost => Item.buyPrice(gold: 10);
         public override bool CanUseItem(Player player)
         {
             return true;

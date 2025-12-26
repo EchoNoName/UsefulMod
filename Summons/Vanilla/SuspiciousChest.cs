@@ -7,7 +7,7 @@ namespace UsefulMod.Summons.Vanilla
 	public class SuspiciousChest : SummonTemplate
 	{
         public override int SummonedNPCType => Main.LocalPlayer.ZoneSnow ? NPCID.IceMimic : NPCID.Mimic;
-		
+		public override int ItemCost => Item.buyPrice(gold: 25);
 		public override bool CanUseItem(Player player) {
         	return true;
     	}

@@ -6,7 +6,7 @@ namespace UsefulMod.Summons.Vanilla
     public class ReallyBigLamp : SummonTemplate
     {
         public override int SummonedNPCType => NPCID.Mothron;
-
+        public override int ItemCost => Item.buyPrice(gold: 20);
         public override bool CanUseItem(Player player)
         {
             return Main.eclipse;

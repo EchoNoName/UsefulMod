@@ -6,7 +6,7 @@ namespace UsefulMod.Summons.Vanilla
     public class HitmansMark : SummonTemplate
     {
         public override int SummonedNPCType => NPCID.SkeletonSniper;
-
+        public override int ItemCost => Item.buyPrice(gold: 1);
         public override bool CanUseItem(Player player)
         {
             return true;

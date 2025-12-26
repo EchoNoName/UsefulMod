@@ -130,23 +130,23 @@ namespace UsefulMod.NPCs
 
 			Player player = Main.LocalPlayer;
 
-			npcShop.Add(new Item(ItemID.LifeCrystal) {shopCustomPrice = 25000}); 
-			npcShop.Add(new Item(ItemID.AegisCrystal) {shopCustomPrice = 25000});
-			npcShop.Add(new Item(ItemID.ManaCrystal) {shopCustomPrice = 15000});
+			npcShop.Add(new Item(ItemID.LifeCrystal) {shopCustomPrice = 22500}); 
+			npcShop.Add(new Item(ItemID.AegisCrystal) {shopCustomPrice = 22500});
+			npcShop.Add(new Item(ItemID.ManaCrystal) {shopCustomPrice = 12500});
 			npcShop.Add(new Item(ItemID.ArcaneCrystal) {shopCustomPrice = 15000});
 			npcShop.Add(new Item(ItemID.GalaxyPearl) {shopCustomPrice = 1000000});
-			npcShop.Add(new Item(ItemID.GummyWorm) {shopCustomPrice = 1000000});
-			npcShop.Add(new Item(ItemID.Ambrosia) {shopCustomPrice = 10000});
-			npcShop.Add(new Item(ItemID.PeddlersSatchel) {shopCustomPrice = 500000});
-			npcShop.Add(new Item(ItemID.TorchGodsFavor) {shopCustomPrice = 1000000});
-			npcShop.Add(new Item(ItemID.CombatBook) {shopCustomPrice = 500000});
-			npcShop.Add(new Item(ItemID.CombatBookVolumeTwo) {shopCustomPrice = 500000}, Condition.Hardmode);
+			npcShop.Add(new Item(ItemID.GummyWorm) {shopCustomPrice = 500000});
+			npcShop.Add(new Item(ItemID.Ambrosia) {shopCustomPrice = 5000});
+			npcShop.Add(new Item(ItemID.PeddlersSatchel) {shopCustomPrice = 100000});
+			npcShop.Add(new Item(ItemID.TorchGodsFavor) {shopCustomPrice = 500000});
+			npcShop.Add(new Item(ItemID.CombatBook) {shopCustomPrice = 100000});
+			npcShop.Add(new Item(ItemID.CombatBookVolumeTwo) {shopCustomPrice = 125000}, Condition.Hardmode);
 			if (ModLoader.TryGetMod("CalamityMod", out Mod calamityMod)) {
-				npcShop.Add(new Item(ItemID.LifeFruit) {shopCustomPrice = 65000}, Condition.Hardmode);
-				npcShop.Add(new Item(ItemID.AegisFruit) {shopCustomPrice = 65000}, Condition.Hardmode);
+				npcShop.Add(new Item(ItemID.LifeFruit) {shopCustomPrice = 45000}, Condition.Hardmode);
+				npcShop.Add(new Item(ItemID.AegisFruit) {shopCustomPrice = 45000}, Condition.Hardmode);
 				npcShop.Add(new Item(calamityMod.Find<ModItem>("CometShard").Type) {shopCustomPrice = 50000}, Condition.Hardmode);
-				npcShop.Add(new Item(calamityMod.Find<ModItem>("BloodOrange").Type) {shopCustomPrice = 1500000}, Condition.DownedMechBossAll);
-				npcShop.Add(new Item(calamityMod.Find<ModItem>("MiracleFruit").Type) {shopCustomPrice = 2500000}, Condition.DownedGolem);
+				npcShop.Add(new Item(calamityMod.Find<ModItem>("BloodOrange").Type) {shopCustomPrice = 1000000}, Condition.DownedMechBossAll);
+				npcShop.Add(new Item(calamityMod.Find<ModItem>("MiracleFruit").Type) {shopCustomPrice = 2000000}, Condition.DownedGolem);
 				npcShop.Add(new Item(calamityMod.Find<ModItem>("EtherealCore").Type) {shopCustomPrice = 3000000}, new Condition("Mods.allPurposeNPC.DownedNebulaTower", () => NPC.downedTowerNebula));
 				npcShop.Add(new Item(calamityMod.Find<ModItem>("PhantomHeart").Type) {shopCustomPrice = 5000000}, new Condition("Mods.allPurposeNPC.DownedPolterghast", () => (bool)calamityMod.Call("GetBossDowned", "polterghast")));
 				npcShop.Add(new Item(calamityMod.Find<ModItem>("Elderberry").Type) {shopCustomPrice = 7500000}, new Condition("Mods.allPurposeNPC.DownedProvidence", () => (bool)calamityMod.Call("GetBossDowned", "providence"))); 

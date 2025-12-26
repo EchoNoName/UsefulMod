@@ -7,6 +7,7 @@ namespace UsefulMod.Summons.Vanilla
     {
         public override int SummonedNPCType => NPC.downedGolemBoss ? NPCID.DD2OgreT3: NPCID.DD2OgreT2;
 
+        public override int ItemCost => Item.buyPrice(gold: 7, silver: 50);
         public override void AddRecipes() {  
             CreateRecipe()
                 .AddIngredient(ItemID.Wood, 100)
