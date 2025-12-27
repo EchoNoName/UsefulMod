@@ -1,5 +1,5 @@
 displayName = More Summon Items (Lazymans Mod)
 author = EchoNoName, GoldenWarrior 
-version = 1.3
+version = 1.4
 weakReferences = CalamityMod
 sortAfter = CalamityMod, FargowiltasSouls
