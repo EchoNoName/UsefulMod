@@ -782,6 +782,16 @@ Items: {
 
 			'''
 	}
+
+	WyvernFeather: {
+		DisplayName: Wyvern Feather
+		Tooltip: 
+			'''
+			Summons a Wyvern.
+			Can only be used in the Sky.
+			
+			'''
+	}
 }
 
 Configs: {
