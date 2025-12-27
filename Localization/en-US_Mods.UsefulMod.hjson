@@ -785,11 +785,11 @@ Items: {
 
 	WyvernFeather: {
 		DisplayName: Wyvern Feather
-		Tooltip: 
+		Tooltip:
 			'''
 			Summons a Wyvern.
 			Can only be used in the Sky.
-			
+
 			'''
 	}
 }

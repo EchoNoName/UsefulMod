@@ -72,7 +72,7 @@ namespace UsefulMod.NPCs
 			NPC.width = 18;
 			NPC.height = 40;
 			NPC.aiStyle = NPCAIStyleID.Passive;
-			NPC.defense = 15;
+			NPC.defense = 1000;
 			NPC.lifeMax = 250;
 			NPC.HitSound = SoundID.NPCHit1;
 			NPC.DeathSound = SoundID.NPCDeath1;
