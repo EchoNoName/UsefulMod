@@ -41,7 +41,7 @@ NPCs: {
 		}
 
 		DisplayName: Anomaly
-		Census.SpawnCondition: Have more than 100 Max Hp
+		Census.SpawnCondition: No Conditions
 		DeathMessage: "The Anomaly has been corrected. "
 	}
 }
@@ -87,7 +87,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Pinky.
-			
+
 			'''
 	}
 
@@ -97,7 +97,7 @@ Items: {
 			'''
 			Summons a Undead Miner.
 			Can only be used at Night or Underground.
-			
+
 			'''
 	}
 
@@ -107,7 +107,7 @@ Items: {
 			'''
 			Summons Tim.
 			Can only be used at Night or Underground.
-			
+
 			'''
 	}
 
@@ -117,7 +117,7 @@ Items: {
 			'''
 			Summons Doctor Bones.
 			Can only be used at Night or Underground.
-			
+
 			'''
 	}
 
@@ -127,7 +127,7 @@ Items: {
 			'''
 			Summons The Bride.
 			Can only be used at Night or Underground.
-			
+
 			'''
 	}
 
@@ -137,7 +137,7 @@ Items: {
 			'''
 			Summons a Voodoo Demon.
 			Can only be used in Hell.
-			
+
 			'''
 	}
 
@@ -149,7 +149,7 @@ Items: {
 			Jungle: Lac Beetle
 			Other: Cochineal Beetle
 			Can only be used Underground.
-			
+
 			'''
 		DisplayName: Pile of Fruits
 	}
@@ -158,7 +158,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Moth.
-			
+
 			'''
 		DisplayName: Lit Lantern
 	}
@@ -167,7 +167,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Squid.
-			
+
 			'''
 		DisplayName: Fake Jellyfish
 	}
@@ -176,7 +176,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Goblin Scout.
-			
+
 			'''
 		DisplayName: Declaration of War
 	}
@@ -186,7 +186,7 @@ Items: {
 			'''
 			Summons a Clown.
 			Can only be used at Night.
-			
+
 			'''
 		DisplayName: Clown For Hire
 	}
@@ -195,7 +195,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Sea Snail.
-			
+
 			'''
 		DisplayName: Algae
 	}
@@ -206,7 +206,7 @@ Items: {
 			'''
 			Summons a Mimic.
 			Summons a Ice Mimic when used on the Ice Biome
-			
+
 			'''
 	}
 
@@ -215,7 +215,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Pirate Captain.
-			
+
 			'''
 	}
 
@@ -226,7 +226,7 @@ Items: {
 			Summons a Lost Girl.
 			Summons a Nymph in Hardmode.
 			Can only be used at Night or Underground.
-			
+
 			'''
 	}
 
@@ -235,7 +235,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Tactical Skeleton.
-			
+
 			'''
 	}
 
@@ -245,7 +245,7 @@ Items: {
 			'''
 			Summons a Blood Eel.
 			Can only be used at Night.
-			
+
 			'''
 	}
 
@@ -255,7 +255,7 @@ Items: {
 			'''
 			Summons a Wandering Eye.
 			Can only be used at Night.
-			
+
 			'''
 	}
 
@@ -265,7 +265,7 @@ Items: {
 			'''
 			Summons Dreadnautilus.
 			Can only be used at Night.
-			
+
 			'''
 	}
 
@@ -275,7 +275,7 @@ Items: {
 			'''
 			Summons a Zombie Merman.
 			Can only be used at Night.
-			
+
 			'''
 	}
 
@@ -285,7 +285,7 @@ Items: {
 			'''
 			Summons a Hemogoblin Shark.
 			Can only be used at Night.
-			
+
 			'''
 	}
 
@@ -295,7 +295,7 @@ Items: {
 			'''
 			Summons the Skeleton Merchant.
 			Can only be used Underground.
-			
+
 			'''
 	}
 
@@ -304,7 +304,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Skeleton Commando.
-			
+
 			'''
 	}
 
@@ -314,7 +314,7 @@ Items: {
 			'''
 			Summons a Eyezor.
 			Can only be used in the Day.
-			
+
 			'''
 	}
 
@@ -323,8 +323,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons the Clumsy Balloon Slime.
-			Can only be used in Space.
-			
+
 			'''
 	}
 
@@ -333,7 +332,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons the Goblin Warlock.
-			
+
 			'''
 	}
 
@@ -343,7 +342,7 @@ Items: {
 			'''
 			Summons the Tortured Soul.
 			Can only be used in Hell.
-			
+
 			'''
 	}
 
@@ -353,7 +352,7 @@ Items: {
 			'''
 			Summons the Medusa.
 			Can only be used at Night or Underground.
-			
+
 			'''
 	}
 
@@ -362,7 +361,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Skeleton Sniper.
-			
+
 			'''
 	}
 
@@ -371,7 +370,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Paladin.
-			
+
 			'''
 	}
 
@@ -381,7 +380,7 @@ Items: {
 			'''
 			Summons a Martian Probe.
 			Can only be used in Space.
-			
+
 			'''
 	}
 
@@ -398,7 +397,7 @@ Items: {
 			In a Zenith/Celebrationmk10 World:
 			Jungle: Jungle Mimic
 			Can only be used in a valid Biome.
-			
+
 			'''
 	}
 
@@ -408,7 +407,7 @@ Items: {
 			'''
 			Summons The Groom.
 			Can only be used at Night.
-			
+
 			'''
 	}
 
@@ -417,7 +416,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Mystic Frog.
-			
+
 			'''
 	}
 
@@ -426,7 +425,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons Bone Lee.
-			
+
 			'''
 	}
 
@@ -436,7 +435,7 @@ Items: {
 			'''
 			Summons a Ice Golem.
 			Can only be used in the Ice Biome.
-			
+
 			'''
 	}
 
@@ -446,7 +445,7 @@ Items: {
 			'''
 			Summons Mothron.
 			Can only be used in an Eclipse.
-			
+
 			'''
 	}
 
@@ -456,7 +455,7 @@ Items: {
 			'''
 			Summons a Sand Elemental.
 			Can only be used in the Dessert Biome.
-			
+
 			'''
 	}
 
@@ -465,7 +464,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Gnome.
-			
+
 			'''
 	}
 
@@ -474,7 +473,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons the Old Shaking Chest.
-			
+
 			'''
 	}
 
@@ -483,7 +482,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Rainbow Slime.
-			
+
 			'''
 	}
 
@@ -492,7 +491,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons the Golden Slime.
-			
+
 			'''
 	}
 
@@ -501,7 +500,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons The Dutchman.
-			
+
 			'''
 	}
 
@@ -511,7 +510,7 @@ Items: {
 			'''
 			Summons Skeletron at Night.
 			Summons the Dungeon Guardian in the Day.
-			
+
 			'''
 	}
 
@@ -520,7 +519,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons The Empress of Light.
-			
+
 			'''
 	}
 
@@ -529,7 +528,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons Duke Fishron.
-			
+
 			'''
 	}
 
@@ -538,7 +537,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Cloud Elemental.
-			
+
 			'''
 	}
 
@@ -547,7 +546,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Diabolist.
-			
+
 			'''
 	}
 
@@ -556,7 +555,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Necromancer.
-			
+
 			'''
 	}
 
@@ -565,7 +564,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Ragged Caster.
-			
+
 			'''
 	}
 
@@ -575,7 +574,7 @@ Items: {
 			'''
 			Summons Anahita.
 			Can only be used in the clean Ocean.
-			
+
 			'''
 	}
 
@@ -584,7 +583,7 @@ Items: {
 			'''
 			Summons the Giant Clam.
 			Can only be used in the Sunken Sea.
-			
+
 			'''
 		DisplayName: Suspicious Clam
 	}
@@ -595,7 +594,7 @@ Items: {
 			Summons the Hivemind when used in the Corruption.
 			Summons the Perforator when used in the Crimson.
 			Can only be used in a Evil Biome.
-			
+
 			'''
 		DisplayName: Rotten Nerves
 	}
@@ -605,7 +604,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Cnidrion.
-			
+
 			'''
 	}
 
@@ -614,7 +613,7 @@ Items: {
 			'''
 			Summons a Overloaded Soldier.
 			Can only be used Underground.
-			
+
 			'''
 		DisplayName: Chaotic Energy
 	}
@@ -624,7 +623,7 @@ Items: {
 			'''
 			Summons a Cragmaw Mire.
 			Can only be used in the Sulphuric Sea after Aquatic Scourge has been defeated.
-			
+
 			'''
 		DisplayName: Acidic Trap
 	}
@@ -635,7 +634,7 @@ Items: {
 			'''
 			Summons the Colossal Squid.
 			Can only be used in the 3rd layer of the Abyss or lower.
-			
+
 			'''
 	}
 
@@ -645,7 +644,7 @@ Items: {
 			'''
 			Summons the Ice Clasper.
 			Can only be used in the Ice Biome.
-			
+
 			'''
 	}
 
@@ -655,7 +654,7 @@ Items: {
 			'''
 			Summons the Atlas.
 			Can only be used in the Astral Infection.
-			
+
 			'''
 	}
 
@@ -665,7 +664,7 @@ Items: {
 			'''
 			Summons the Eidolist.
 			Can only be used in the 3rd layer of the Abyss or lower.
-			
+
 			'''
 	}
 
@@ -675,7 +674,7 @@ Items: {
 			'''
 			Summons the Nuclear Terror.
 			Can only be used in the Sulphuric Sea.
-			
+
 			'''
 	}
 
@@ -685,7 +684,7 @@ Items: {
 			'''
 			Summons a Mauler.
 			Can only be used in the Sulphuric Sea.
-			
+
 			'''
 	}
 
@@ -695,7 +694,7 @@ Items: {
 			'''
 			Summons a Earth Elemental.
 			Can only be used in Underground.
-			
+
 			'''
 	}
 
@@ -705,7 +704,7 @@ Items: {
 			'''
 			Summons a Reaver Shark.
 			Can only be used in the 4th layer of the Abyss.
-			
+
 			'''
 	}
 
@@ -715,7 +714,7 @@ Items: {
 			'''
 			Summons a Plaguebringer.
 			Can only be used in the Jungle Biome.
-			
+
 			'''
 	}
 
@@ -724,7 +723,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Martian Saucer.
-			
+
 			'''
 	}
 
@@ -734,7 +733,7 @@ Items: {
 			'''
 			Summons The Old Duke.
 			Can only be used in the Sulphuric Sea.
-			
+
 			'''
 	}
 
@@ -743,7 +742,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons Betsy.
-			
+
 			'''
 	}
 
@@ -752,7 +751,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons an Ogre.
-			
+
 			'''
 	}
 
@@ -761,7 +760,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons Dark Mage.
-			
+
 			'''
 	}
 
@@ -769,7 +768,7 @@ Items: {
 		Tooltip:
 			'''
 			Summons a Dungeon Slime.
-			
+
 			'''
 		DisplayName: Slimy Key
 	}
@@ -780,7 +779,7 @@ Items: {
 			'''
 			Summons the Rune Wizard.
 			Can only be used Underground.
-			
+
 			'''
 	}
 }
@@ -788,12 +787,12 @@ Items: {
 Configs: {
 	UsefulModConfig: {
 		EnableAnomaly: {
-			Tooltip: "Set this to Off if you don't want the Anomaly NPC"
+			Tooltip: Set this to Off if you don't want the Anomaly NPC
 			Label: Enable Anomaly
 		}
 
 		EnableCollector: {
-			Tooltip: "Set this to Off if you don't want the Collector NPC"
+			Tooltip: Set this to Off if you don't want the Collector NPC
 			Label: Enable Collector
 		}
 
@@ -805,7 +804,7 @@ Configs: {
 		DisplayName: Lazymans Mod Configs
 
 		NonConsSummons: {
-			Tooltip: "Disable to make all summon items Non-Consumable. NOTE: Recipes are balanced around this being on"
+			Tooltip: Disable to make all summon items Non-Consumable. NOTE: Recipes are balanced around this being on
 			Label: Consumed Summons
 		}
 	}

@@ -40,6 +40,7 @@ namespace UsefulMod.Summons
             Item.useStyle = ItemUseStyleID.HoldUp;
             Item.consumable = ModContent.GetInstance<UsefulModConfig>().NonConsSummons;
             Item.value = ItemCost;
+            Item.maxStack = 999;
 		}
 		
 		public override bool? UseItem(Player player) {
@@ -63,13 +64,13 @@ namespace UsefulMod.Summons
                     }
                 }
                 else {
-                    if (IsBoss) {;
+                    if (IsBoss) {
                         Vector2 spawnPosition = player.Center;
                         int x_off_set = Main.rand.NextBool() ? Main.rand.Next(1000, 1201) : Main.rand.Next(-1200, -999);
                         NPC.SpawnBoss((int)(spawnPosition.X + x_off_set), (int)(spawnPosition.Y - 1000f), SummonedNPCType, player.whoAmI);
                     } else {
                         LocalizedText text = Language.GetText("Announcement.HasAwoken");
-                        int n = NPC.NewNPC(NPC.GetBossSpawnSource(Main.myPlayer), (int)x_spawn_cord, (int)y_spawn_cord, SummonedNPCType);
+                        int n = NPC.NewNPC(player.GetSource_ItemUse(Item), (int)x_spawn_cord, (int)y_spawn_cord, SummonedNPCType);
                         String npcName = Lang.GetNPCNameValue(SummonedNPCType);
                         if (n != Main.maxNPCs && Main.netMode == NetmodeID.Server)
                             NetMessage.SendData(MessageID.SyncNPC, number: n);

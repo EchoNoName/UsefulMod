@@ -83,7 +83,7 @@ namespace UsefulMod.NPCs
 		}
 
 		public override bool CanTownNPCSpawn(int numTownNPCs) { 
-			return Main.LocalPlayer.statLifeMax2 > 100;
+			return true;
 		}
 
 		public override ITownNPCProfile TownNPCProfile() {

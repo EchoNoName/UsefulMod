@@ -10,7 +10,7 @@ namespace UsefulMod.Summons.Vanilla
         public override int ItemCost => Item.buyPrice(gold: 5);
         public override bool CanUseItem(Player player)
         {
-            return player.ZoneSkyHeight;
+            return true;
         }
 
         public override void AddRecipes() {  
