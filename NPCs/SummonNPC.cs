@@ -213,6 +213,7 @@ namespace UsefulMod.NPCs
 				HMrareEnemyShop.Add(new Item(ModContent.ItemType<SeismicCore>()), Condition.Hardmode);
 				rareEnemyShop.Add(new Item(ModContent.ItemType<SuspiciousChest>()));
 				rareEnemyShop.Add(new Item(ModContent.ItemType<SlimyKey>()), Condition.DownedSkeletron);
+				HMrareEnemyShop.Add(new Item(ModContent.ItemType<WyvernFeather>()), Condition.Hardmode);
 				HMrareEnemyShop.Add(new Item(ModContent.ItemType<ClownForHire>()), Condition.Hardmode);
 				HMrareEnemyShop.Add(new Item(ModContent.ItemType<AncientRunes>()), Condition.Hardmode);
 				HMrareEnemyShop.Add(new Item(ModContent.ItemType<LitLantern>()), Condition.Hardmode);
@@ -244,6 +245,7 @@ namespace UsefulMod.NPCs
 			} else if (ModLoader.TryGetMod("CalamityMod", out Mod calamity)) {
 				rareEnemyShop.Add(new Item(ModContent.ItemType<TrojanHorse>())); 
 				rareEnemyShop.Add(new Item(ModContent.ItemType<SlimyKey>()), Condition.DownedSkeletron);
+				HMrareEnemyShop.Add(new Item(ModContent.ItemType<WyvernFeather>()), Condition.Hardmode);
 				HMrareEnemyShop.Add(new Item(ModContent.ItemType<SuspiciousChest>()), Condition.Hardmode);
 				HMrareEnemyShop.Add(new Item(ModContent.ItemType<SandstormCore>()), Condition.Hardmode); 
 				HMrareEnemyShop.Add(new Item(ModContent.ItemType<PermafrostCore>()), Condition.Hardmode); 
@@ -282,6 +284,7 @@ namespace UsefulMod.NPCs
 				rareEnemyShop.Add(new Item(ModContent.ItemType<PermafrostCore>())); 
 				rareEnemyShop.Add(new Item(ModContent.ItemType<SuspiciousChest>()));
 				rareEnemyShop.Add(new Item(ModContent.ItemType<SlimyKey>()), Condition.DownedSkeletron);
+				HMrareEnemyShop.Add(new Item(ModContent.ItemType<WyvernFeather>()), Condition.Hardmode);
 				HMrareEnemyShop.Add(new Item(ModContent.ItemType<ClownForHire>()), Condition.Hardmode);
 				HMrareEnemyShop.Add(new Item(ModContent.ItemType<AncientRunes>()), Condition.Hardmode);
 				HMrareEnemyShop.Add(new Item(ModContent.ItemType<LitLantern>()), Condition.Hardmode);
@@ -302,6 +305,7 @@ namespace UsefulMod.NPCs
 				eventEnemyShop.Add(new Item(ModContent.ItemType<ReallyBigLamp>()), Condition.DownedPlantera);
 			} else {
 				rareEnemyShop.Add(new Item(ModContent.ItemType<SlimyKey>()), Condition.DownedSkeletron); 
+				HMrareEnemyShop.Add(new Item(ModContent.ItemType<WyvernFeather>()), Condition.Hardmode);
 				HMrareEnemyShop.Add(new Item(ModContent.ItemType<SuspiciousChest>()), Condition.Hardmode);
 				HMrareEnemyShop.Add(new Item(ModContent.ItemType<SandstormCore>()), Condition.Hardmode); 
 				HMrareEnemyShop.Add(new Item(ModContent.ItemType<PermafrostCore>()), Condition.Hardmode); 
