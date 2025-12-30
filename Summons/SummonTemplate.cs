@@ -44,39 +44,33 @@ namespace UsefulMod.Summons
 		}
 		
 		public override bool? UseItem(Player player) {
+            if (player.whoAmI != Main.myPlayer)
+                return true;
 
-            float x_spawn_cord = player.position.X + (Main.rand.NextBool() ? Main.rand.Next(-800, -301) : Main.rand.Next(300, 801));
-            float y_spawn_cord = player.position.Y + Main.rand.Next(-800, -300);
             if (player.whoAmI == Main.myPlayer)
                 SoundEngine.PlaySound(SoundID.Roar, player.position);
 
-                if (Main.netMode != NetmodeID.MultiplayerClient) {
+                if (Main.netMode == NetmodeID.SinglePlayer) {
                     if (IsBoss) {
                         Vector2 spawnPosition = player.Center;
                         int x_off_set = Main.rand.NextBool() ? Main.rand.Next(1000, 1201) : Main.rand.Next(-1200, -999);
                         NPC.SpawnBoss((int)(spawnPosition.X + x_off_set), (int)(spawnPosition.Y - 1000f), SummonedNPCType, player.whoAmI);
                     }
                     else {
+                        float x_spawn_cord = player.position.X + (Main.rand.NextBool() ? Main.rand.Next(-800, -301) : Main.rand.Next(300, 801));
+                        float y_spawn_cord = player.position.Y + Main.rand.Next(-800, -300);
                         LocalizedText text = Language.GetText("Announcement.HasAwoken");
                         int n = NPC.NewNPC(player.GetSource_ItemUse(Item), (int)x_spawn_cord, (int)y_spawn_cord, SummonedNPCType);
                         String npcName = Lang.GetNPCNameValue(SummonedNPCType);
                         ChatHelper.BroadcastChatMessage(text.ToNetworkText(npcName), new Color(175, 75, 255));
                     }
                 }
-                else {
-                    if (IsBoss) {
-                        Vector2 spawnPosition = player.Center;
-                        int x_off_set = Main.rand.NextBool() ? Main.rand.Next(1000, 1201) : Main.rand.Next(-1200, -999);
-                        NPC.SpawnBoss((int)(spawnPosition.X + x_off_set), (int)(spawnPosition.Y - 1000f), SummonedNPCType, player.whoAmI);
-                    } else {
-                        LocalizedText text = Language.GetText("Announcement.HasAwoken");
-                        int n = NPC.NewNPC(player.GetSource_ItemUse(Item), (int)x_spawn_cord, (int)y_spawn_cord, SummonedNPCType);
-                        String npcName = Lang.GetNPCNameValue(SummonedNPCType);
-                        if (n != Main.maxNPCs && Main.netMode == NetmodeID.Server)
-                            NetMessage.SendData(MessageID.SyncNPC, number: n);
-                            ChatHelper.BroadcastChatMessage(text.ToNetworkText(npcName), new Color(175, 75, 255));
-                            // Sends Has awoken message in chat for multuplayer
-                    }
+                if (Main.netMode == NetmodeID.MultiplayerClient) {
+                    ModPacket summonPacket = Mod.GetPacket();
+                    summonPacket.Write((byte)0);
+                    summonPacket.Write(SummonedNPCType);
+                    summonPacket.Write(IsBoss);
+                    summonPacket.Send();
                 }
             return true;
         }

@@ -9,4 +9,6 @@ This mod also adds some QOL recipies for Skeletron, Duke Fishron, Empress of Lig
 
 Currently only supports English.
 
+Github: https://github.com/EchoNoName/UsefulMod
+
 Feel free to make suggestions on what enemies still needs a summon item or any other QOL items/recipes that you think would be helpful.
